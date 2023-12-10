@@ -15,3 +15,6 @@ int main()
     }
     return(0);
 }
+/*
+Observation : ce code fait appel a un bloc de fonction if-else au lieu de deux if pour comparer a la solution precedente pour le meme resultat que ex0806.c 
+*/
