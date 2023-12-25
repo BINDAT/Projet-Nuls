@@ -18,3 +18,7 @@ int main()
     }
     return(0);
 }
+/*
+Observation : se code compare les entrees de claviers avec les conditions avec l'operateurs OU || se qui permet de savoir ou vas la reponse et
+du scanf qui inscrit cela dans la var answer de l'attribue char et d'afficher une reponse adequate.
+*/
