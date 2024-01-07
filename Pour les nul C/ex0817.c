@@ -10,11 +10,11 @@ int main()
         puts("Erreur disque, vous n'y pouvez rien.");
         break;
         case 2:
-        break;
         puts("Format invalide, applez votre avocat.");
-        case 3:
         break;
+        case 3:
         puts("Nom de fichier incorrect, spank it.");
+        break;
         default:
         puts("Haha, ni 1, ni 2, ni 3 ?");
     }
