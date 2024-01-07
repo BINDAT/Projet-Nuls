@@ -29,3 +29,7 @@ int main ()
     }
     return (0);
 }
+/*
+Obersavation : ce code renvoit la formule choisie en fonction de l'entrer clavier grace a la var choixMenu puis le scanf et la memoire de &choixMenu 
+puis envoit la saisie au bloc switch grace au parametre du bloc
+*/
