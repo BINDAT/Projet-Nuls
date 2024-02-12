@@ -13,5 +13,5 @@ int main()
     return(0);
 }
 /*
-Observation : affiche toutes les lettres de l'alphabet grace à la boucle for.
+Observation : affiche des chiffres grace %d à la boucle for.
 */
