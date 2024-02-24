@@ -15,5 +15,5 @@ int main()
     return(0);
 }
 /*
-Obersavion : creer des boucles infini avec de A à G et de chiffre de 1 à 7
+Obersavion : creer des boucles avec de A à G et de chiffre de 1 à 7 qui se termine à G7
 */
