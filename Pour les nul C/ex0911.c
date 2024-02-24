@@ -4,7 +4,7 @@ int main()
 {
     int alpha, code;
 
-    for (alpha ='A'; alpha <='G'; alpha+alpha+1)
+    for (alpha ='A'; alpha <='G'; alpha=alpha+1)
     {
         for(code=1; code<=7; code=code+1)
         {
