@@ -19,5 +19,5 @@ int main ()
 }
 
 /*
-Observation : fait apparaitre une suite de nombre grace à deux var et leurs val en sur une ligne d'affichage
+Observation : fait apparaitre une suite de nombre grace à deux var et leurs val en sur une ligne d'affichage avec deux printf
 */
