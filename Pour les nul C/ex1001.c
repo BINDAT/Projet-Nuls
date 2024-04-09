@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-/* Function prototype */
+/* Fonction du prototype */
 void prompt();
 
 int main() {
@@ -16,7 +16,7 @@ int main() {
     return 0;
 }
 
-/* Function definition for prompt() */
+/* Fonction de definition pour prompt() */
 void prompt() {
     printf("C:\\DOS>");
 }
