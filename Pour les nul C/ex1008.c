@@ -1,20 +1,18 @@
 #include <stdio.h>
 //En cours de travaux 
 /*fonction prototype.*/
-void graph(int valeur, int cmptr);
+void graph(int cmptr, int valeur);
 
- int valeur, cmptr;
+int main()
+{
+    int valeur, cmptr;
 
     valeur = 2;
     
 
-int main()
-{
-   
-
     while(valeur <= 64)
     {
-        graph(valeur <= 64);// graph dois accepter plusieurs argument dont le caractere quelle dois afficher 
+       graph(valeur, cmptr);// graph dois accepter plusieurs argument dont le caractere quelle dois afficher 
         printf("La valeur est %d\n", valeur);
         valeur = valeur * 2;
 
@@ -22,11 +20,10 @@ int main()
     return(0);
 }
 /* Fonction de definition pour graph*/
-void graph(int valeur, int cmptr)
+void graph(int cmptr, int valeur)
 {
     int x;
-    for (x=2; x<valeur; x=x*2)
-    for (x=0; x<cmptr; x=x+1)
+        for (x=0; x<cmptr; x=x+1)
         putchar('*');
     putchar('\n');
 }
