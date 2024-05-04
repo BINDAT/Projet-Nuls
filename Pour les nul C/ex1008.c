@@ -1,28 +1,28 @@
 #include <stdio.h>
 //En cours de travaux 
 /*fonction prototype.*/
-void graph(int cmptr, int valeur);
+void graph(int cmptr, int valeur); //definition du void et des var en parametres du void
 
-int main()
+int main() //instruction primaire
 {
-    int valeur, cmptr;
+    int valeur, cmptr; // var locales à main
 
-    valeur = 2;
+    valeur = 2; //valeur de la var cible
     
 
     while(valeur <= 64)
     {
-       graph(valeur, cmptr);// graph dois accepter plusieurs argument dont le caractere quelle dois afficher 
+       graph(valeur, cmptr); //prend en compte deux var dans les parametres 
         printf("La valeur est %d\n", valeur);
-        valeur = valeur * 2;
+        valeur = valeur * 2; //reprise de la var cible avec auto assignation a l'opperation
 
     }
     return(0);
 }
 /* Fonction de definition pour graph*/
-void graph(int cmptr, int valeur)
+void graph(int cmptr, int valeur) //instruction du void
 {
-    int x;
+    int x; //var locale a l'instruction du void
         for (x=0; x<cmptr; x=x+1)
         putchar('*');
     putchar('\n');
