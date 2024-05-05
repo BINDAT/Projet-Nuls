@@ -5,22 +5,22 @@ void graph(int comptr);
 
 int main()
 {
-    int valeur;
+    int valeur; //création de la var locale de main
 
-    valeur = 2;
+    valeur = 2; // désignation de la valeur de la var locale
 
     while(valeur <= 64)
     {
-        graph(valeur);
+        graph(valeur);//fonction graph avec en paramètres la var locale valeur au main
         printf("La valeur est %d\n", valeur);
-        valeur = valeur * 2;
+        valeur = valeur * 2; //prise de la var avec auto résignation de la var pour l'opération.
     }
     return(0);
 }
 /* Fonction de definition pour graph*/
 void graph(int cmptr)
 {
-    int x;
+    int x; //var local a la fonction graph
 
     for (x=0; x<cmptr; x=x+1)
         putchar('*');
