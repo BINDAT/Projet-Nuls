@@ -7,7 +7,7 @@ int main() //bloc d'instuction primaire
  float temp_f, temp_c; //var interne au bloc primaire
 
  printf("Temperature en Fahrenheit: ");
- scanf("%f", &temp_f); //note à moi même ne pas oublier de mettre la mémoire & au temp_f 
+ scanf("%f", &temp_f); //note à moi même ne pas oublier de mettre la mémoire & au temp_f pour rappel scanf prend l'entrer du clavier.
  printf("%.1fF vaut %.1fC\n",temp_c, convertir(temp_f));//point de conversion et affichage
  return(0); //retourne tout
 }
