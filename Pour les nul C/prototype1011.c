@@ -1,7 +1,7 @@
 #include <stdio.h>
   
   float temp_f, temp_c;
-  temp_c = temp_f 32;
+  temp_c = temp_f;
   temp_f = 32/1.8;
 
 int main() //bloc d'instuction primaire
