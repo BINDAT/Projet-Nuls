@@ -9,3 +9,6 @@ int main ()
     printf("Ces messieurs me disent");
     return(0);
 }
+/*
+Observation : affiche plusieurs messages de suite. avec un  return(0) pour finir le programme.
+*/
