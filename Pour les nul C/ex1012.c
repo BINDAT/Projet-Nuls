@@ -10,7 +10,7 @@ int main()//fonction main
 printf("Indiquez une valeur pour stopper (0-100):");
 scanf("%d", &s);
 limiter(s);
-return(0)
+return(0);
 }
 //fonction de définition de void limiter
 void limiter(int stop)
@@ -28,3 +28,7 @@ void limiter(int stop)
   }
   puts("Je gagne !");
 }
+/*
+Observation : ils manque a se code pour fonctionner corectement un moyen de verification de valeur sinon malgrer se fait il fonction est excute
+le code jusqu'à return du printf vous avez gagnez.
+*/
