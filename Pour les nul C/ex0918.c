@@ -4,7 +4,7 @@ int main()
 {
     int x;
 
-    for (x=0; x=10; x=x+1)
+    for (x=0; x=10; x=x+1)//boucle regler sur 10 et ajout de +1 a partir de 0
     {
         puts("Vous chercher quelque chose ?");
     }
