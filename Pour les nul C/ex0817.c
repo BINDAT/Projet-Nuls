@@ -1,10 +1,10 @@
 #include <stdio.h>
 int main()
 {
-    int code;
+    int code; //var code
     printf("Indiquez le code d'erreur (1-3)");
-    scanf("%d",&code);
-    switch(code)
+    scanf("%d",&code); //Prend le nombre en entrer du clavier et l'enregistre dans la var code.
+    switch(code)//prend le nombre en mémoire de la var code pour la transmettre au case.
     {
         case 1:
         puts("Erreur disque, vous n'y pouvez rien.");
