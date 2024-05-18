@@ -18,7 +18,7 @@ int main()//fonction main
   printf("Indiquez une valeur pour stopper (0-100):");
   scanf("%d", &s); //prend l'entree du clavier
    if(verifier(s)){ //la var verifier prend dans la var s (entrer memoire du clavier) pour la correspondance des valeurs.
-   limiter(s, ordi_stop);
+   limiter(s, ordi_stop);//Prend ici la var s et sa valeur en memoire avec la var de ordi_stop.
    }else{
    printf("La valeur n'est pas comprise dans la plage \n");
    }return(0); //j'avais oublier ce bloc d'instruction conditionnel pour que cela fonctionne bien
@@ -29,7 +29,7 @@ bool verifier(int valeur){
   
 }
 //fonction de définition de void limiter
-void limiter(int stop, int ordi_stop)
+void limiter(int stop, int ordi_stop) //point de comparaison
 {
   //instructions du void limiter
   int x;
