@@ -1,13 +1,15 @@
-#include <stdio.h>
+#include <stdio.h>//Librairie.
 
-int main()
+int main()//fonction principale
 {
-    int x;
-    x= 0;
-    while (x<=10)
+    int x;//var
+    x= 0;//val initiale de la var
+    while (x<=10)//Boucle est limitation
     {
         printf("Ne marchez pas dans ma pelouse !\n");
-        x++;     
+        x++;     //incrémentation
     }
     return(0);
 }
+/*
+Observation : Ici le code affiche 10 fois l'instruction du message en printf. Et la boucle s'incremente en interne grâce à x++;
