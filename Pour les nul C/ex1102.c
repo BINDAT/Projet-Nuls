@@ -12,4 +12,4 @@ int main()//fonction principale
     return(0);
 }
 /*
-Observation : Ici le code affiche 10 fois l'instruction du message en printf. Et la boucle s'incremente en interne grâce à x++;
+Observation : Ici le code affiche 10 fois l'instruction du message en printf. Et la boucle s'incremente en interne grâce à x++;*/
