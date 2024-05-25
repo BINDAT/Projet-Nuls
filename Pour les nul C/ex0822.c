@@ -1,18 +1,18 @@
 #include <stdio.h>
 int main()
 {
-    int a, b,leplusgrand;
+    int a, b,leplusgrand; //point de creation des var.
     printf("Indiquez une valeur A : ");
-    scanf("%d",&a);
+    scanf("%d",&a);//prend l'entrer et met en memoire sur a.
     printf("Indiquez une valeur B : ");
-    scanf("%d",&b);
+    scanf("%d",&b);//prend l'entrer et met en memoire sur b.
     
-    if (a>b)
+    if (a>b) //boucle a condition entre var a et b pour prendre leurs val en memoire.
     {
-        leplusgrand = a; 
+        leplusgrand = a; //var a en prise avec var leplusgrand.
     }
     else{
-        leplusgrand = b;
+        leplusgrand = b; //car b en prise avec var leplusgrand.
     }
     printf("Voici la valeur %d finale",leplusgrand);
     return(0);
