@@ -11,3 +11,6 @@ int main()
         printf("%d %% %d = %d\n",a,VALEUR,a%VALEUR); //prend la val de la constance et celle de a dans la boucle pour faire un modulo.
     return(0);
 }
+/*
+Observation : Ce code peut servir à obtenir un pourcentage sur une val de la var en const.
+*/
