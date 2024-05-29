@@ -16,3 +16,6 @@ int main()
     printf("alpha = %.1f\n",alpha);
     return(0);
 }
+/*
+Observation : affiche plusieurs messages avec des opérations différentes en float manipuler en auto affectation avec la variable elle même. le message sert de balise de suivie des opérations des modifications de valeur.
+*/
