@@ -6,7 +6,7 @@ int main()
  float resultat, valeur;
 
  printf("Indiquee une valeur fractionnaire : ");
- scanf("%f",&valeur);
+ scanf("%f", &valeur);
  resultat = sqrt(valeur);
  printf("Racine carree de %.2f = %.2f\n",valeur,resultat);
  resultat = pow(valeur,3);
@@ -14,6 +14,6 @@ int main()
  resultat = floor(valeur);
  printf("Arrondi par defaut de %.2f ) %.2f\n",valeur,resultat);
  resultat = ceil(valeur);
- printf("Arrondi par exces de %2.f = %2.f\n",valeur,resultat);
+ printf("Arrondi par exces de %.2f = %.2f\n",valeur,resultat);
  return(0);
 }
