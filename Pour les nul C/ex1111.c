@@ -17,3 +17,6 @@ int main()
  printf("Arrondi par exces de %.2f = %.2f\n",valeur,resultat);
  return(0);
 }
+/*
+Observation : Calcul un nombre saisi pour le l'afficher en une puissance de 10 sqrt, pow, floor, ceil. parmis ses options là.
+*/
