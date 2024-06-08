@@ -11,3 +11,6 @@ int main()
            sqrt(valeur), pow(valeur, 3), floor(valeur), ceil(valeur));
     return 0;
 }
+/*
+Observation : Calcul un nombre saisi pour le l'afficher en une puissance de 10 sqrt, pow, floor, ceil. parmis ses options là. En version raccourcis.
+*/
