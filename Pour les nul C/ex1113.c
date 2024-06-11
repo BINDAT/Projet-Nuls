@@ -11,5 +11,5 @@ int main()
  return(0);
 }
 /*
-Observation : Ce cide convertis les degres d'angle en radians.
+Observation : Ce code convertis les degres d'angle en radians.
 */ 
