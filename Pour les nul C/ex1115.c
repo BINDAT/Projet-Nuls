@@ -10,3 +10,6 @@ int main()
  printf("%.2f radians valent %.2f degres.\n", radians,degres);
  return(0);
 }
+/*
+Observation : Ce code convertis les radians en degres d'angles.
+*/ 
