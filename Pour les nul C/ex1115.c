@@ -18,3 +18,7 @@ int main()
     }
 return(0);
 }
+
+/*
+Observation : Fait une forme de dessin (Courbe) à partir des valeurs dans les variables et grâce au putchar ('*')
+*/
