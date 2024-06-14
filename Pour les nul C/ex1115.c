@@ -9,10 +9,10 @@ int main()
 {
     float graph,s,x;
 
-    for(graph=0; graph<PI; graph+=PERIODE)
+    for(graph=0; graph<PI; graph+=PERIODE) //boucle qui reprend en paramètre PI et periode dans la var int a main graph
     {
-        s=sin(graph);
-        for(x=0; x< s*LONGUEURONDE; x++)
+        s=sin(graph); //graph donne une val a la var s
+        for(x=0; x< s*LONGUEURONDE; x++) //ici la var LONGUEURONDE et en paramètre avec x et s
             putchar('*');
         putchar('\n');
     }
