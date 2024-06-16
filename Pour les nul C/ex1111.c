@@ -20,3 +20,6 @@ int main()
 /*
 Observation : Calcul un nombre saisi pour le l'afficher en une puissance de 10 sqrt, pow, floor, ceil. parmis ses options là.
 */
+/*
+Solution probleme Math.h : aller dans le task.json et partis argument ajouter "-lm" pour lier la bibliotheque libm correctement
+*/
