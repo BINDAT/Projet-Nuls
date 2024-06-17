@@ -9,7 +9,7 @@ puts("100 chiffres au hasard");
 for (a=0; b<20; b++)
 {
     {
-        r=rand();
+        r=rand();//var qui prend des nombre aléatoire avec rand
         printf("%d\t",r);
     }
     putchar('\n');
