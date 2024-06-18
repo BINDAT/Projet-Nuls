@@ -16,3 +16,7 @@ for (a=0; b<20; b++)
 }
 return(0);
 }
+/*
+Observation : Affiche de nombre entre 0 et 9 de manière aléatoire avec tabulations et saut de ligne.
+Reste à savoir comment ils est possible d'en avoir 100 ?
+*/
