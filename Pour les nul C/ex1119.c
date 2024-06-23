@@ -19,3 +19,6 @@ int main()
     }
     return(0);
 }
+/*
+Observation : se code permet grâce à un nombre d'en générer automatique plusieurs de manière aléatoire.
+*/
