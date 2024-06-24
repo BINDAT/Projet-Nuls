@@ -8,11 +8,11 @@ int main()
     printf("Indiquez une valeur pour la graine : ");
     scanf("%u", &graine);
     srand(graine);
-    for (a=0; a<20; a++)
+    for (a=0; a<20; a++) //les 20 premières itérations
     {
-        for (b=0; b<5; b++)
+        for (b=0; b<5; b++) //les 5 deuxièmes itérations
         {
-            r=rand();
+            r=rand(); //var pour les val aléatoire
             printf("%d\t", r);
         }
         putchar('\n');
