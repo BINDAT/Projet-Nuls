@@ -18,3 +18,6 @@ int main()
     }
     return(0);
 }
+/*
+Observation : Génère des suites nombres avec rand et srand
+*/
