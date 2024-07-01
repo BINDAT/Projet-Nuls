@@ -7,7 +7,7 @@ int main()
     int aleatoire,saisie;
     printf("Devinez la valeur aléatoire entre 0 et 9 : ");
     srand((unsigned)time(NULL)); //var var en srand assignée sur une val aléatoire sur avec time(NULL)
-    scanf("%d",&aleatoire);
+    scanf("%d",&saisie);
          
             aleatoire=rand() %10; //limite de 0 à 9.
             printf("%d\t",aleatoire);
