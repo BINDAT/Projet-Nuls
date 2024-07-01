@@ -10,7 +10,7 @@ int main()
     srand((unsigned)time(NULL)); //var var en srand assignée sur une val aléatoire sur avec time(NULL)
     scanf("%d",&saisie);
 
-            aleatoire=nombre_aleatoire(0,9) //limite de 0 à 9.
+            aleatoire=nombre_aleatoire(0,9);//limite de 0 à 9.
             printf("%d\t",aleatoire);
 
         putchar('\n');
