@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-int nombre_aleatoire(int min, int max);
+int nombre_aleatoire(int min, int max); //Var globale avec paramètres pour apporter la possibilité de réglages.
 int main()
 {
     int aleatoire,saisie;
