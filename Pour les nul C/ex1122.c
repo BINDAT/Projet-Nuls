@@ -4,7 +4,7 @@
 
 int main()
 {
-int calculatrice= 20-5*2+42/6;
+int calculatrice= 20-5*2+42/6; //Var de calcul
               printf("%d\t",calculatrice);
   
 return(0);
