@@ -9,3 +9,6 @@ int calculatrice= 20-5*2+42/6; //Var de calcul prend toute l'opération et fait 
   
 return(0);
 }
+/*
+Observation : Prend le résultat de la var et affiche la val de la var dans le printf.
+*/
