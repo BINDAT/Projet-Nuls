@@ -10,5 +10,5 @@ int main()
     int e = d/6;
     calcultrice = a,b,c,d,e;
     printf("%d\n",calcultrice);
-
+    return(0);
 }
