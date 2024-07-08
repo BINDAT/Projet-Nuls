@@ -12,4 +12,6 @@ int main()
     printf("%d",calcultrice);
     return(0);
 }    
-   
+/*
+Solution : Cette solution propose une variable avec réaffectation à chaque opération sur le changement de valeur
+*/
