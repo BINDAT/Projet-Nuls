@@ -12,4 +12,6 @@ int main()
     printf("%d",calcultrice);
     return(0);
 }    
-   
+/*
+Solution : Cette solution reprend le résultat de la variable sans auto réaffectation de cette dernière et applique les opérations directement dessus.
+*/
