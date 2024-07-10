@@ -15,4 +15,6 @@ int main()
     printf("%d",calcultrice);
     return(0);
 }    
-   
+/*
+Solution : Cette solution ce réaffecte après chaque opérations.
+*/
