@@ -12,3 +12,6 @@ int main()
     printf("%d\n",calcultrice);
     return(0);
 }
+/*
+Solution : Cette solution reprend plusieurs var avec leurs val dans une var calcultrice pour le calcul.
+*/
