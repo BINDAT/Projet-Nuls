@@ -18,3 +18,6 @@ int main()
     printf("%d\n",calcultrice);
     return(0);
 }
+/*
+Solution : Cette solution est une solution de réaffectation la var calcultrice reprend les val des var avant traitement puis après traitement.
+*/
