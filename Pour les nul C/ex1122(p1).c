@@ -13,5 +13,5 @@ int main()
     return(0);
 }
 /*
-Solution : Cette solution reprend plusieurs var avec leurs val dans une var calcultrice pour le calcul.
+Solution : Cette solution reprend plusieurs var avec leurs val dans une var calcultrice pour le calcul. Ici le préfixe int est présent.
 */
