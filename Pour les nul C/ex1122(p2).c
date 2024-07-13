@@ -12,3 +12,6 @@ int main()
     printf("%d\n",calcultrice);
     return(0);
 }
+/*
+Solution : Cette solution prend toutes les val des var entre elles avant de rentrer dans la var calcultrice.
+*/
