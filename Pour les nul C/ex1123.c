@@ -10,3 +10,6 @@ int main()
     printf("%d",calculatrice);
     return(0);
 }
+/*
+Solution : Cette solution à des var avec des val sans interaction directement entre elle et ne contiennent aucun opérateurs mathématiques. La var calcultrice prend en charge les var et leurs val avec implémentation des opérateurs mathématiques écrits à la main.
+*/
