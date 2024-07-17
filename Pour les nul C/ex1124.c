@@ -6,7 +6,6 @@ int main()
     nombre1 = 12;
     nombre2 = 5;
     nombre3 = 2;
-    calculatrice = (nombre1 - nombre2) * nombre3;
-    printf("%d",calculatrice);
+    calculatrice = (nombre1 - nombre2) * nombre3;//prioritée instaurée grâce au parenthèses pour le calcul.   printf("%d",calculatrice);
     return(0);
 }
