@@ -17,3 +17,6 @@ int main()
     printf("#3 %d\n", scoremax3);
 
 }
+/*
+Observation : Ce code prend les entrée au clavier et les enregistre pour les affichers ensuite.
+*/
