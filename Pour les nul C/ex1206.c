@@ -1,16 +1,13 @@
 #include <stdio.h>
+#include <stdlib.h>
 
-struct tabBourse
-{
-   float *tabBourseFin;
-};
-
-int main(void)
+int main()
 { 
-    float donnee [] = {140450.06,14458.62,14539.14,14514.11,14452.06};
+    float tabBourseFin [] = {};
+    float données [5] = {140450.06,14458.62,14539.14,14514.11,14452.06};
+    tabBourseFin = données;
     for (int boucle =1; boucle <=5; boucle++)
     {
-        float tabBourseFin;
         printf("Jour %d: %f\n",boucle,tabBourseFin);
     }
     return(0);
