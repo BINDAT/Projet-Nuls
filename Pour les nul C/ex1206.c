@@ -16,3 +16,7 @@ int main()
     }
     return(0);
 }
+/*
+Observation : Ce code a des vals pré-enregistrées du tableau de données et le transfère dans le tableau tabBourseFin vide. puis fait un affichage des valeurs de ce dernier.
+affichage avec position de la boucle et de sa valeur contenue. 
+*/
