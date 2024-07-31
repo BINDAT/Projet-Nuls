@@ -14,3 +14,6 @@ int main()
     putchar('\n');
     return(0);
 }
+/*
+Observation : affiche le texte en dehors du tableaux à étudier.
+*/
