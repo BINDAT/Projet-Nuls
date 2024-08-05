@@ -1,20 +1,20 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
 
 #define TAILLE 40
 
 int main()
 {
     
-    int tabulles[40] = {};
-    int interne,externe,temp,x,aleatoire;
+    int tabulles[TAILLE];
+    int interne,externe,temp,x;
     srand((unsigned)time(NULL));
-    for(aleatoire; aleatoire <40; aleatoire++)
+    for(x=0; x<TAILLE; x++)
     {    
-        aleatoire = rand()%101;
-    
+        tabulles[x] = rand()%101;
     }
-    tabulles[40] = &aleatoire;
-    
     
     /* Affiche le tableau initial */
     puts("Tableau de depart :");
