@@ -36,5 +36,6 @@ int main()
 
 /*
 Observation : ce code contient un tableau de 6 valeur qui est d'abord afficher en désordre puis ensuite afficher en ordre.
-la constante en #define TAILLE sert à déterminer la taille la sur 6 élément pour le tableau mais aussi les boucles.
+la constante en #define TAILLE sert à déterminer la taille la sur 6 élément pour le tableau mais aussi les boucles avec la var x.
+Les Var interne et externe servent à la manipulation des val du tableau et sont mises dans des boucles prévues à cet effet avec un if.
 */
