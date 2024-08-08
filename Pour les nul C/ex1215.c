@@ -45,3 +45,9 @@ int main()
      putchar('\n');
      return(0);
 }
+
+/*
+Observation : ce code contient un tableau de 40 valeur qui est d'abord afficher en désordre puis ensuite afficher en ordre.
+la constante en #define TAILLE sert à déterminer la taille la sur 40 élément pour le tableau mais aussi les boucles avec la var x et le rand()%101 sert dans cet exemple a déterminer des val aléatoire.
+Les Var interne et externe servent à la manipulation des val du tableau et sont mises dans des boucles prévues à cet effet avec un if.
+*/
