@@ -11,3 +11,6 @@ int main ()
     printf("Bienvenu %s,%s",nom,prenom);
     return(0);
 }
+/*
+Observation : Ici le code propose deux tableau vide qui seront remplis avec les scanf et afficher en printf.
+*/
