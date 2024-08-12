@@ -30,7 +30,7 @@ int main()
     for(externe=0; externe<TAILLE-1; externe++)
     {
         for(interne=externe+1; interne<TAILLE; interne++)
-            if(tabulles[externe] > tabulles[interne])
+            if(tabulles[externe] < tabulles[interne])
             {
                 temp=tabulles[externe];
                 tabulles[externe] = tabulles[interne];
@@ -47,7 +47,7 @@ int main()
 }
 
 /*
-Observation : ce code contient un tableau de 40 valeur qui est d'abord afficher en désordre puis ensuite afficher en ordre.
+Observation : ce code contient un tableau de 40 valeur qui est d'abord afficher en désordre puis ensuite afficher en ordre décroissant.
 la constante en #define TAILLE sert à déterminer la taille la sur 40 élément pour le tableau mais aussi les boucles avec la var x et le rand()%101 sert dans cet exemple a déterminer des val aléatoire.
 Les Var interne et externe servent à la manipulation des val du tableau et sont mises dans des boucles prévues à cet effet avec un if.
 */
