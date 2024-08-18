@@ -9,9 +9,9 @@ char president [TAILLE][8] = {
 "Coty",
 "Grevy"
     };
-    int x,index;
+    int x;
     
-    index = 0;
+    x = 0;
     puts(president[x]);
     return(0);  
 }
