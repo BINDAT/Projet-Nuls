@@ -38,3 +38,7 @@ int main()
         printf("%d Voici le totals des caractères utilisés\n",total);
     return(0);
 }
+
+/*
+Observation : Ce code compte le nombre de caractères dans une chaîne de caractères les majuscule minuscule les blancs et les lettres et tout cela ensuite.
+*/
