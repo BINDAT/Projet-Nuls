@@ -18,3 +18,6 @@ printf("En minuscule : %s",minuscule);
 
 return(0);
 }
+/*
+Observation : Ce code affiche la saisie de caractères en majuscule entièrement puis en minuscule entièrement.
+*/
