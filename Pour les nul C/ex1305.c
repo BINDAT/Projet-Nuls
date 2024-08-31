@@ -16,3 +16,6 @@ int main()
         puts("Cela n'est pas une réponse attendue.");
     return(0);
 }
+/*
+Observation : Ce code affiche les des messages à l'entrée de O ou N mais rien sur les autres caractères. Laissant le choix strict sur les deux propositions.
+*/
