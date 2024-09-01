@@ -16,3 +16,6 @@ int main()
         puts("Cela n'est pas une réponse attendue.");
     return(0);
 }
+/*
+Observation : Ce code affiche les des messages à l'entrée de O ou N ou o et n mais affichera un message en else ppur l'erreur de saisie.
+*/
