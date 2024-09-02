@@ -8,9 +8,9 @@ int main()
     printf("Voulez-vous faire exploser la lune ? ");
     scanf("%c", &reponse);
     reponse = toupper (reponse);
-    if(reponse == 'O' && 'o')
+    if(reponse == 'O')
         puts("BOUM !");
-    else if(reponse == 'N' && 'n')
+    else if(reponse == 'N')
         puts("La lune ne craint rien.");
     else
         puts("Cela n'est pas une réponse attendue.");
