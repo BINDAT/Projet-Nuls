@@ -26,5 +26,5 @@ int main()
     
 }
 /*
-Observation : Ce code affiche les des messages à l'entrée de O ou N ou o et n mais affichera un message en else ppur l'erreur de saisie.
+Observation : Ce code affiche les des messages à l'entrée de O ou N ou o et n mais affichera un message en else ppur l'erreur de saisie. les conditions sont créers en switch case.
 */
