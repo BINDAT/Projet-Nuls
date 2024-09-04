@@ -16,5 +16,5 @@ int main()
     return(0);
 }
 /*
-Observation : Ce code affiche les des messages à l'entrée de O ou N ou o et n mais affichera un message en else ppur l'erreur de saisie.
+Observation : Ce code affiche les des messages à l'entrée de O ou N ou o et n mais affichera un message en else pour l'erreur de saisie. Le if et le else if gère deux cas deux reponse dans cette exemple.
 */
