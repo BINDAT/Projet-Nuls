@@ -15,3 +15,6 @@ int main()
     printf("Ravi de vous voir, %s!\n", primo);
  return(0);   
 }
+/*
+Observation : Ce code affiche votre prénom et nom avec un espace. Après la saisie.
+*/
