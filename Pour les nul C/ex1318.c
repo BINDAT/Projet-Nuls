@@ -9,4 +9,5 @@ int main()
     printf("Initiale du nom de famille : ");
     secundo = getchar();
     printf("Vos initiales son '%c' et '%c' \n", primo,secundo);
+    return(0);
 }
