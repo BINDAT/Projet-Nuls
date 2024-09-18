@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 int main()
 {
@@ -10,12 +11,12 @@ int main()
     } bilou, marie, daniel, susie;
     
     struct monEnreg humain;
-    bilou.nom;
+    strcpy(bilou.nom , "Bilou");
     bilou.age = 49;
-    bilou.dette = 69;
-    bilou.heure_de_jeu = 5;
+    bilou.dette = 69.0f;
+    bilou.heure_de_jeu = 5.0f;
 
-    printf("Victime : %s\n âge %i\n dette %f\n temps en heure %f\n", bilou.nom, bilou.age,bilou.dette,bilou.heure_de_jeu);
+    printf("Victime : %s\n âge %i\n dette %1.f\n temps en heure %1.f\n", bilou.nom, bilou.age,bilou.dette,bilou.heure_de_jeu);
 
     return(0);
 }
