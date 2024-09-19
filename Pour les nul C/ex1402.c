@@ -20,3 +20,6 @@ int main()
 
     return(0);
 }
+/*
+Obersevation : Ce code affiche les données cibles de la structure. Ses données sont entrées par ciblage des critères pour les faires correspondres à une valeur.
+*/
