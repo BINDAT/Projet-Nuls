@@ -17,3 +17,6 @@ int main()
 
     return(0);
 }
+/*
+Observation : Fait un bloc qui contient des informations qui sont affichées avec le bloc d'instruction d'affichage.
+*/
