@@ -3,9 +3,7 @@
 
 int main()
 {
-
-
-
+    
     struct scores
     {
         char nomj[32];
