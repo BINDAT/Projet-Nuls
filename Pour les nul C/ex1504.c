@@ -16,3 +16,8 @@ int main (int argc, char *argv[])
     }
     return(0);
 }
+
+/*
+Observation : ce code effectue un affichage sur le nom du programme est les valeurs.
+!ATTENTION! : Ce code dois être compiler, est ensuite executer dans un terminal.
+*/
