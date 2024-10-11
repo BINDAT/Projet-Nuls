@@ -12,6 +12,8 @@ int main()
     scanf("%d", &age);
     printf("Est votre taille ? : ");
     scanf("%f", &toise);
+    moitier();
+    doubler();
     printf("Vous avez %d ans et mesurez %.1f.\n", age, toise);
     return(0);
 }
@@ -31,5 +33,5 @@ void doubler(void)
     age*=2.0;
     printf("Le double de votre age est %d.\n", age);
     toise*=2.0;
-    printf("La moitie de votre taille est %.1f\n", toise);
+    printf("La moitie de votre taille est %.1f.\n", toise);
 }
