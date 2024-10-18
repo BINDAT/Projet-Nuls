@@ -12,8 +12,8 @@ int main()
     resultat = bor | SET;
 
     printf("\t%s\t%d\n",binbin(bor), bor);
-    printf("\t%s\t%d\n", binbin(SET), SET);
-    printf("\t%s\t%d\n", binbin(resultat), resultat);
+    printf("|\t%s\t%d\n", binbin(SET), SET);
+    printf("=\t%s\t%d\n", binbin(resultat), resultat);
     return(0);
 }
 
