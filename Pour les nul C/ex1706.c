@@ -2,12 +2,12 @@
 
 int main()
 {
-    char input[64];
+    char input[448];
     int ch;
     int x = 0;
 
     printf("Saisissez du texte : ");
-    fgets(input,63, stdin);
+    fgets(input,447, stdin);
 
     while (input[x] != '\n')
     {
