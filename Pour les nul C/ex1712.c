@@ -12,7 +12,7 @@ int main()//Fonction principale.
     for(x=0; x<8; x++)//Boucle d'affichage de ligne. 
     {
         printf("%s %d\n", binbin(decalbin),decalbin);
-        decalbin = decalbin >> 1;//Prend la val en mémoire avec décalage de 1 sur côté droit.
+        decalbin = decalbin >> 1;//Prend la val en mémoire avec décalage de 1 sur côté gauche.
     }
     return(0);
 }
