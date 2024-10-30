@@ -1,36 +1,36 @@
 #include <stdio.h>
 
-int main()
+int main()//fonction principale
 {
-    char input[448];
-    int ch;
-    int x = 0;
+    char input[448];//création de input en chaîne de caractères limite de 448
+    int ch;//création de ch
+    int x = 0;// création de x en valeur 0
 
     printf("Saisissez du texte : ");
-    fgets(input,447, stdin);
+    fgets(input,447, stdin);//prend et enregistre dans input avec limite de 447 avec stdin
     
-    if (input[x] >='a' && input[x] <= 'z')
+    if (input[x] >='a' && input[x] <= 'z')//convertie normalement une chaîne de caractères en minuscule en majuscule
     {
-        while (input[x] != '\n' && input[x] !='\0')
+        while (input[x] != '\n' && input[x] !='\0')//répète en boucle pour terminer la conversion de chaque caractères le !='\n' sert pour déterminé autre que miniscule et !='\0' sert à déterminer autre qu'un nombre
         {
-        ch = input[x] & 223;
-        putchar(ch);
-        x++;
+        ch = input[x] & 223; //ch reçois ici toutes les valeurs de input 
+        putchar(ch);//ici affichage de tout les caractères convertis
+        x++;//incrémente la boucle
         }
-        putchar('\n');
+        putchar('\n');//nouvelle ligne
     }
-    else if(input[x] >='A' && input[x] <='Z')
+    else if(input[x] >='A' && input[x] <='Z')//Quand ils y a déjà un ou plusieurs caractères en majuscule
         {
         printf("Lettre en majuscule trouver avant modification : ");    
-        while (input[x] != '\n' && input[x] !='\0')
+        while (input[x] != '\n' && input[x] !='\0')//répète en boucle pour terminer la conversion de chaque caractères
         {
-        ch = input[x] & 223;
-        putchar(ch);
-        x++;
+        ch = input[x] & 223;//ch reçois ici toutes les valeurs de input 
+        putchar(ch);//ici affichage de tout les caractères convertis
+        x++;//incrémente la boucle
         }
-        putchar('\n');
+        putchar('\n');//nouvelle ligne
         }       
-    else
+    else //autre cas ici
     {
         printf("Impossible d'afficher autre chose que des lettres");
     }
