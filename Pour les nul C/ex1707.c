@@ -11,7 +11,7 @@ int main()//fonction principale
     
     if (input[x] >='a' && input[x] <= 'z')//convertie normalement une chaîne de caractères en minuscule en majuscule
     {
-        while (input[x] != '\n' && input[x] !='\0')//répète en boucle pour terminer la conversion de chaque caractères le !='\n' sert pour déterminé autre que miniscule et !='\0' sert à déterminer autre qu'un nombre
+        while (input[x] != '\n' && input[x] !='\0')//répète en boucle pour terminer la conversion de chaque caractères le !='\n' sert pour déterminé autre qu'une lettre et !='\0' sert à déterminer autre qu'un nombre
         {
         ch = input[x] & 223; //ch reçois ici toutes les valeurs de input 
         putchar(ch);//ici affichage de tout les caractères convertis
