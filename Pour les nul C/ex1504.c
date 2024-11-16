@@ -1,18 +1,18 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main (int argc, char *argv[])
+int main (int argc, char *argv[])//fonction principale avec paramètres argc et *argv
 {
-    int curseur;
+    int curseur;//création de var curseur
 
-    for (curseur =0; curseur < argc; curseur++)
+    for (curseur =0; curseur < argc; curseur++)//boucle de avec curseur à 0 et argc qui sert argv
     {
-        printf("%s ", argv[curseur]);
+        printf("%s ", argv[curseur]);//argv qui prend en table curseur afficher dans printf
     }
 
     for (curseur = 1; curseur < argc; curseur++)
     {
-        printf("Arg#%d %s\n",curseur,argv[curseur]);
+        printf("Arg#%d %s\n",curseur,argv[curseur]);//curseur et argv[curseur] affiche un argument avec sont numéro
     }
     return(0);
 }
