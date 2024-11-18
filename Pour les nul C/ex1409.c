@@ -3,7 +3,7 @@
 
 int main ()
 {
-    struct date 
+    struct date //création de la structure date et de ses instructions
     {
         int sjour;
         int smois;
@@ -11,16 +11,16 @@ int main ()
     }; 
     
     
-    struct humain 
+    struct humain //création de la structure humain et de ses instructions
     { 
-        struct id 
+        struct id //création de la sous structure id et de ses instructions
         {
             char hprenom[45];
             char hnomfam[45];
         }hnom;       
-        struct date hdatenaiss;
+        struct date hdatenaiss;//appel de la structure date avec fonction hdatenaiss
     };
-    struct humain president;
+    struct humain president;//attribution de structure et de ses données en lien avec la structure humain et date
     strcpy(president.hnom.hprenom,"George");
     strcpy(president.hnom.hnomfam,"Washington");
     president.hdatenaiss.sjour = 22;
