@@ -1,20 +1,20 @@
 #include <stdio.h>
 #include <string.h>
 
-int main ()
+int main ()//fonction principale
 {
-    struct date
+    struct date //fonction de structure date avec ses instructions
     {
         int sjour;
         int smois;
         int sannee;
     };
-    struct humain
+    struct humain //fonction de structure humain avec ses instructions
     {
         char hnom[45];
         struct date hdatenaiss;
     };
-    struct humain president;
+    struct humain president; //création d'un humain de nom president avec ses données
 
     strcpy(president.hnom,"George Washington");
     president.hdatenaiss.sjour = 22;
