@@ -17,3 +17,9 @@ int main(){
     printf("%f\n",d);
     return(0);
 }
+/*
+Ici dans la definition des usages des var ils est defini les var pour les utilisers et leur attribues de reglage exemple INT, FLOAT.
+A l'application des usage une valeur leur est attribuer en fonctions des attribues de reglage INT, FLOAT.
+Est Par la suite dans la partie affichage test les var pour afficher le result pour chacune
+cette solution est pluris lignes pour l'affichage.
+*/
