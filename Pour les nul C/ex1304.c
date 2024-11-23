@@ -6,7 +6,7 @@ int main()
     char reponse;
 
     printf("Voulez-vous faire exploser la lune ? ");
-    scanf("%c", &reponse);
+    scanf("%c", &reponse);//prend la saisit de caractères uniquement en majuscule pour O pour le if sinon else
     reponse = toupper (reponse);
     if(reponse == 'O')
         puts("BOUM !");
