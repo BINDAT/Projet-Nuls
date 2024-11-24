@@ -6,13 +6,13 @@ int main()
     char reponse;
 
     printf("Voulez-vous faire exploser la lune ? ");
-    scanf("%c", &reponse);
-    reponse = toupper (reponse);
-    if(reponse == 'O')
+    scanf("%c", &reponse);//analyse l'entrée du clavier
+    reponse = toupper (reponse);//transformation en majuscule ici
+    if(reponse == 'O')//Si entrée est O
         puts("BOUM !");
-    else if(reponse == 'N')
+    else if(reponse == 'N')//Si l'entrée N
         puts("La lune ne craint rien.");
-    else
+    else//toute les autres entrées
         puts("Cela n'est pas une réponse attendue.");
     return(0);
 }
