@@ -2,16 +2,13 @@
 
 int main()
 {
-    char a,b,c;
-    char *p;
+    int info;
+    int *lecteur;
     
-    p = &a;
-    *p = 'A';
-    p = &b;
-    *p = 'B';
-    p = &c; 
-    *p = 'C'; 
-    printf("Apprenez votre %c%c%cs\n",a,b,c);
+    info = 960;
 
+    printf("info stock %d\n",info);
+    lecteur = &info;
+    printf("lecteur a %d\n",*lecteur);
     return(0);
 }
