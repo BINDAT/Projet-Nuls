@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main()
+{
+    int nombres[10];
+    int x;
+    int *pn;
+
+    pn = &nombres;
+    *pn = nombres;
+    
+    /*Rempli le tableau*/
+    for(x=0; x<10; x++)
+    {
+        *pn =x+1;
+        pn++;
+    }
+
+    /*Affiche le tableau*/
+    for (x=0; x<10; x++)
+        printf("nombre[%d] = %d\n",x+1,nombres[x]);
+
+    return(0);
+}
