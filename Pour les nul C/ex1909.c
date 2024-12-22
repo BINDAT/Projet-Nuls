@@ -2,15 +2,20 @@
 
 int main()
 {
-    char alphabet = 'A';
+    char alphabet[27];
     int a;
     char *pa;
     
-    pa = &alphabet;
-    
+    pa = alphabet;
     for (a=0; a<26; a++)
-      
-        putchar((*pa)++);  
+    {
+        *pa++=a+'A';
+    }
+    pa = alphabet;
+    for (a=0; a<26; a++)
+    {  
+        putchar(*pa++);  
+    }
     putchar('\n');
 
     return(0);
