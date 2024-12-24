@@ -3,12 +3,14 @@
 int main()
 {
     char sample[] = "D'ou me viendra le secours?\n";
-    int index = 0;
+    char *pointeur;
 
-    while(sample[index] != '\0')
+    pointeur = sample;
+
+    while(*pointeur)
     {
-        putchar(sample[index]);
-        index++;
+        putchar(*pointeur);
+        pointeur++;
     }
     return(0);
 }
