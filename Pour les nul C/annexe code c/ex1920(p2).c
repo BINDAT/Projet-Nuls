@@ -16,10 +16,10 @@ int main()
     {
         y = 0;
         while(fruits[x][y] && putchar(fruits[x][y++]))
-            {
-
-            }      
-            putchar('\n');
+        {
+            ;
+        }
+        putchar('\n');
     }
     return(0);
 }
