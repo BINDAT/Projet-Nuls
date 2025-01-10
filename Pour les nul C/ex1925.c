@@ -4,26 +4,33 @@
 
 #define TAILLE 10
 
-void create(int tableau);
+void create(int *usb);
+void show(int *usb);
 
 int main()
 {
-    int curseur;
+    int lecteur[10];
     puts("Données stockées : ");
-    for (curseur =0; curseur < TAILLE; curseur++)
-    {
-        
-    }
+        create(lecteur);
+    
     
     return(0);
 }
 
-void create(int tableau)
-{
-    int *tableau[10] = {0,1,2,3,4,5,6,7,8,9};
-    int curseur_create;
-    for(curseur_create; curseur_create<TAILLE; curseur_create++)
+void create(int *usb)
+{   
+    int tableau_create[TAILLE] = {0,1,3,2,4,5,6,7,8,9};
+    for(int boucle = 0; boucle < TAILLE; boucle++)
     {
-        printf("",);
+        usb[boucle] = tableau_create[boucle];
+        printf("%d\n",tableau_create[boucle]);
+    }
+}
+
+void show(int *usb)
+{
+    for (int boucle2 = 0; boucle2 < TAILLE; boucle2++)
+    {
+        ;
     }
 }
