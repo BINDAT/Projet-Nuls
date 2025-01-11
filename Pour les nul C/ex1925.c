@@ -9,28 +9,29 @@ void show(int *usb);
 
 int main()
 {
-    int lecteur[10];
-    puts("Données stockées : ");
-        create(lecteur);
-    
+    int usb[TAILLE];
+    /*puts("Données stockées : "); Test*/
+        create(usb);
+    puts("Données choisies : ");
+        show(usb);
     
     return(0);
 }
 
 void create(int *usb)
 {   
-    int tableau_create[TAILLE] = {0,1,3,2,4,5,6,7,8,9};
-    for(int boucle = 0; boucle < TAILLE; boucle++)
+    
+    for(int boucle_create = 0; boucle_create < TAILLE; boucle_create++)
     {
-        usb[boucle] = tableau_create[boucle];
-        printf("%d\n",tableau_create[boucle]);
+        usb[boucle_create] = rand()%10;
+        /*printf("%d\t",usb[boucle]); Test*/
     }
 }
 
 void show(int *usb)
 {
-    for (int boucle2 = 0; boucle2 < TAILLE; boucle2++)
+    for (int boucle_show = 0; boucle_show < TAILLE; boucle_show++)
     {
-        ;
+       printf("%d\t",usb[boucle_show]);
     }
 }
