@@ -1,32 +1,36 @@
 #include <stdio.h>
 
-char *strinverser(char *input);
+char *strinverser(char *input);/*créer une fonction char à pointeur strinverser avec 
+en paramètre sa fonction char pointeur input*/
 
-int main()
+int main() /*Fonction principale*/
 {
-    char machaine[64];
+    char machaine[64]; /*Tableau de caractères de taille 64*/
 
     printf("Saisissez du texte : ");
-    fgets(machaine,62,stdin);
-    puts(strinverser(machaine));
+    fgets(machaine,62,stdin); //prise d'entrée de saisit 
+    puts(strinverser(machaine)); /*Affiche la saisit*/
 
     return(0);
 }
 
-char *strinverser(char *entrante)
+char *strinverser(char *entrante)/*Fonction char avec pointeur strinverser 
+avec sa fonction char pointeur entrante*/
 {
-    static char sortante[64];
-    char *i,*o;
+    static char sortante[64];/*Fonction static char sortante de taille 64 (static est un tampon 
+    de mémoire ici*/
+    char *i,*o; /*fonction pointeur i et o*/
 
-    i = entrante; o = sortante;
+    i = entrante; o = sortante; /*Attribution de i à entrante et o à sortante 
+    pour le transit des données*/
 
-    while(*i++ != '\n')
+    while(*i++ != '\n')/*boucle d'incrémentation*/
         ;
-    i--;
+    i--;/*décrémentation*/
 
-    while (i >= entrante)
-        *o++ = *i--;
+    while (i >= entrante) /*comparaison de i et entrante*/
+        *o++ = *i--; /*o pointeur incrémente et i pointeur décrémente*/
     *o = '\0';
 
-    return(sortante);
+    return(sortante);/*Ressort les données ici mais à l'envers*/
 }
