@@ -34,3 +34,7 @@ avec sa fonction char pointeur entrante*/
 
     return(sortante);/*Ressort les données ici mais à l'envers*/
 }
+/*
+Observation : Ce code prend la saisit et la restitue à l'envers grâce à la fonction *strinverser et la var i qui cherche est pointe sur les derniers saut
+de ligne et o qui remonte le remonte car entre temps i est stock dans o. 
+*/
