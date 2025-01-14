@@ -35,3 +35,7 @@ void show(int *usb)
        printf("%d\t",usb[boucle_show]);
     }
 }
+/*
+Observation : Ce code imprime dix valeurs par pseudo hasard de 0 à 9 par la boucle create est ensuite afficher par la fonction show toutes deux appelées
+dans la fonction main.
+*/
