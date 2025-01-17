@@ -17,7 +17,7 @@ int main()/*Fonction principale*/
 
     for (a=0; a<6; a++)/*boucle qui compte de 0 à 6 et augmente à partir de a*/
         for (b=a+1; b<7; b++)/*boucle qui compte à partir de b avec a +1 en dessous de b7 et b s'auto incrémente*/
-            if (strcmp(fruits[a],fruits[b])>0)/*reprise de fruit a et b pour tri*/
+            if (strcmp(fruits[a],fruits[b])>0)/*avec strcmp reprise de fruits a et b pour tri*/
             {
                 temp = *(fruits+a); /*temp prend les val de fruits a*/
                 *(fruits+a) = *(fruits+b);/*fruits a et b sont égalisés*/
