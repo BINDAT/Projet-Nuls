@@ -21,3 +21,8 @@ int main()/*Fonction principale*/
         }
     return(0); /*renvoie de la fonction principale avec paramètre 0*/
 }
+/*
+Observation : affichage des données incorrecte car le double pointeur
+fait cibler chaque premier caractères de chaque fruits au lieu du simple qui affiche
+chaque valeurs de manières complète.
+*/
