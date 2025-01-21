@@ -15,7 +15,7 @@ int main()/*Fonction principale*/
 
     for (x=0; x < 7; x++)/*putchar simple pointeur pour fruits pour sont affiche avec
     incrémentation par la variable x de la boucle for*/
-        puts(*(fruits+x));/*putchar de nouvelle ligne*/
+        puts(*(fruits+x));/*putchar de nouvelle ligne qui affiche une à une les valeurs de fruits en +x*/
     
     return(0);/*renvoie de la fonction principale avec paramètre 0*/
 }
