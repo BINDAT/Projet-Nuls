@@ -7,7 +7,7 @@ int main ()/*fonction principale*/
   float *kelvin;
   kelvin = celsius + 273.15;
   kelvin = (fahrenheit + 459.67)*(5.0/9.0);
-  kelvin = (float*)malloc(sizeof(float)*1);/*A etudier*/
+  kelvin = (float*)malloc(sizeof(float));/*A etudier*/
   if(kelvin == 'C' || 'c')
   {
     puts("Température en celsius");
@@ -18,6 +18,8 @@ int main ()/*fonction principale*/
   }
   printf("Quel est votre température ? ");
   scanf("%f",kelvin);
+  printf("Est-ce en celsius (C) ou en fahrenheit (F)?");
+  scanf("%d",kelvin);
   printf("Vous avez %f .\n", *kelvin);
   return(0);
 }
