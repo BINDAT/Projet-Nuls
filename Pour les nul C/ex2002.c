@@ -10,11 +10,12 @@ int main ()/*fonction principale*/
   kelvin = (float*)malloc(sizeof(float));/*A etudier*/
   if(kelvin == 'C' || kelvin == 'c')
   {
-    puts("Température en celsius");
+    printf("Vous avez %1.f",celsius*kelvin);
     exit(1);/*sortie de if*/
   }elseif(kelvin == 'F' || kelvin == 'f')
   {
    printf("Vous avez %1.f",fahrenheit*kelvin);
+   exit(2);
   }
   printf("Quel est votre température ? ");
   scanf("%f",kelvin);
