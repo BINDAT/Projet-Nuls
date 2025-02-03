@@ -4,25 +4,36 @@
 int main ()/*fonction principale*/
 {  
   float celsius,fahrenheit;
+  celsius = 273.15;
+  fahrenheit = (459.67)*(5.0/9.0);
   float *kelvin;
   char type;
   
-  kelvin = (fahrenheit + 459.67)*(5.0/9.0);
-  kelvin = (float *kelvin)malloc(sizeof(float));/*A etudier*/
-  if(type == 'C' || type == 'c')
+  kelvin = (float *)malloc(sizeof(float));/*A etudier*/
+  
+  if(kelvin == NULL)
   {
-    kelvin = kelvin + celsius + 273.15;
-    printf("Vous avez %1.f",celsius*kelvin);
-    exit(1);/*sortie de if*/
-  }elseif(type == 'F' || type == 'f')
-  {
-   kelvin = kelvin + (fahrenheit + 459.67)*(5.0/9.0);
-   printf("Vous avez %1.f",fahrenheit*kelvin);
-   exit(2);
+    printf("Erreur d'allocation mémoire.\n");
+    exit(1);
   }
-  printf("Quel est votre température ? ");
-  scanf("%f",kelvin);
-  printf("Est-ce en celsius (C) ou en fahrenheit (F)?");
-  scanf("%c",type);
+    printf("Quelle est votre température ? ");
+    scanf("%f",kelvin);
+    printf("Est-ce en celsius (C) ou en fahrenheit (F)?");
+    scanf(" %c",&type);
+      if(type == 'C' || type == 'c')
+      {
+        *kelvin = *kelvin + celsius; 
+        printf("Vous avez %2.f °c\n",*kelvin);
+          exit(1);/*sortie de if*/
+      }else if(type == 'F' || type == 'f')
+      {
+        *kelvin = *kelvin + fahrenheit;
+        printf("Vous avez %2.f °f\n",*kelvin);
+        exit(3);
+      }else
+      {
+        printf("Erreur d'unité de mesure de température\n");
+      }
+
   return(0);
 }
