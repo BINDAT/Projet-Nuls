@@ -1,8 +1,8 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include <stdlib.h>/*bibliothèque pour les fonctions*/
 
-int main()
+int main()/*fonction principale*/
 {
-    printf("Hello world! \n");
+    printf("Hello world! \n");/*affichage*/
     return 0;
 }
