@@ -1,7 +1,7 @@
-#include <stdio.h>
+#include <stdio.h>/*Bibliothèque*/
 
-int main ()
+int main ()/*fonction principale*/
 {
-    puts("J'adore afficher du texte !");
+    puts("J'adore afficher du texte !");/*Affichage*/
     return(0);
 }
