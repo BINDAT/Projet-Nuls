@@ -1,6 +1,6 @@
-#include <stdio.h>
+#include <stdio.h>/*Bibliothèque*/
 int main(){
     puts("Le mot de passe secret est :");
-    puts ("Spatula.");
+    puts ("Spatula.");/*Affichage*/
     return(0);
 }
