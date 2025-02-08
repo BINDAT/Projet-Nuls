@@ -1,6 +1,6 @@
-#include <stdio.h>
-int main(){
-    puts("Le mot de passe secret est :");
-/*  puts ("Spatula.")*/
+#include <stdio.h>/*Bibliothèque*/
+int main(){/*Fonction principale*/
+    puts("Le mot de passe secret est :");/*affichage*/
+/*  puts ("Spatula.")*/ /*Commentaire*/
     return(0);
 }
