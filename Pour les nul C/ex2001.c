@@ -15,3 +15,6 @@ int main ()/*fonction principale*/
   printf("Vous avez %d ans.\n", *age);
   return(0);
 }
+/*
+Observation : affiche l'âge saisit sinon renvoi un message d'erreur.
+*/
