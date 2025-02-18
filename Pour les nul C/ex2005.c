@@ -13,7 +13,6 @@ int main()
         exit(1);
     }
     puts("Saisissez quelque chose d'un peu long :");
-
     fgets(entrante,1023,stdin);
     puts("Vous avez saisi :"); 
     printf("\"%s\"\n",entrante);
@@ -22,9 +21,10 @@ int main()
     if (sortante==NULL)
     {
         puts("Allocation de impossible ! Banzai !");
-        strcpy(entrante, sortante);
+        
         exit(2);
     }
+    strcpy(entrante, sortante);
     printf("%s",sortante); 
     free(entrante);
     free(sortante);
