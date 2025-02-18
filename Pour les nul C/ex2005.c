@@ -25,7 +25,7 @@ int main()
     }
     strcpy(sortante,entrante);
     puts(sortante); 
-    
+    /*printf("%s",sortante)*/
     free(entrante);
     free(sortante);
     
