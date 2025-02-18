@@ -15,20 +15,18 @@ int main()
     puts("Saisissez quelque chose d'un peu long :");
 
     fgets(entrante,1023,stdin);
-    /*puts("Vous avez saisi :"); Test ici*/
+    puts("Vous avez saisi :"); 
     printf("\"%s\"\n",entrante);
     
     sortante = (char *)malloc(sizeof(char)*1024);
     if (sortante==NULL)
     {
         puts("Allocation de impossible ! Banzai !");
-        strcpy(entrante,sortante);
-        free(entrante);
-        free(sortante);
+        strcpy(entrante, sortante);
         exit(2);
     }
-    puts("Vous avez saisi :");
-    printf("\"%s\"\n",sortante); 
-  
+    printf("%s",sortante); 
+    free(entrante);
+    free(sortante);
     return(0);
 }
