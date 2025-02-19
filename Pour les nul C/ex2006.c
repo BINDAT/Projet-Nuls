@@ -37,14 +37,12 @@ int main()
 }
 void remplacer_voyelle(char *changement)
 {
-    char *lettre = changement;
-    if (strchr("aeiouAEIOU",*lettre))
+    while(*changement)
     {   
-        while (*lettre)
-        {    
-            *lettre = '@';
-            lettre++;
+        if(strchr("aeiouAEIOU", *changement))
+        {
+            *changement = '@';
         }
-    } 
-    
-}
+        changement++;
+    }
+} 
