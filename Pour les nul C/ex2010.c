@@ -40,4 +40,20 @@ int main()
    acour -> cours = 28.77;
    acour->asuiv = NULL;
 /* Affichage */
+   puts("Portefeuille");
+   printf("Symbole\tQte\tCours\tValeur\n");
+   acour = aprems;
+   printf("%-6s\t%5d\t%.2f\t%.2f\n",\
+        acour->symbole,
+        acour->quantite,
+        acour->cours,
+        acour->quantite*acour->cours);
+   acour =acour->asuiv;
+   printf("%-6s\t%5d\t%.2f\t%.2f\n",\
+        acour->symbole,
+        acour->quantite,
+        acour->cours,
+        acour->quantite*acour->cours);
+    
+    return(0);
 }    
