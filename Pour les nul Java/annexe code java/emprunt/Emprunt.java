@@ -5,11 +5,11 @@ import java.io.InputStreamReader;
 import java.text.NumberFormat;
 
 public class Emprunt {
-    
+
     public static void  main(String arg[]) throws IOException {
 
         BufferedReader clavier =
-            new BufferedReader(new InputStreamReader(System;in));
+            new BufferedReader(new InputStreamReader(System.in));
         double dKapital, dTaux, dTXPourcent;
         int iAns, n;
         final int iMoisParAn = 12;
