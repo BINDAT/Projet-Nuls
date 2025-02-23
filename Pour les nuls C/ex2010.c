@@ -4,17 +4,17 @@
 
 int main()
 {
-    struct action {
+    struct action { /*Définition de la structure*/
         char symbole[5];
         int quantite;
-        float cours;
-        struct action *asuiv;
+        float cours; /*Définitions des champs de données*/
+        struct action *asuiv; /*définition du lien de structure et champ auiv*/
     };
-    struct action *aprems;
+    struct action *aprems; 
     struct action *acour;
-    struct action *anouv;
+    struct action *anouv; /*Définition des liens de données*/
 /* Creation de la structure en mémoire */
-   aprems=(struct action *)malloc(sizeof(struct action));
+   aprems=(struct action *)malloc(sizeof(struct action)); /*Définition de l'allocation mémoire pour aprems*/
    if (aprems==NULL)
    {
         puts("Erreur malloc()");
@@ -27,7 +27,7 @@ int main()
    acour->cours = 801.19;
    acour->asuiv = NULL;
 
-   anouv = (struct action *)malloc(sizeof(struct action));
+   anouv = (struct action *)malloc(sizeof(struct action)); /*Définition de l'allocation mémoire pour anouv*/
    if (anouv==NULL)
    {
         puts("Autre erreur malloc()");
