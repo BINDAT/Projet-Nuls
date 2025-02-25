@@ -22,10 +22,10 @@ int main()
    }
 /* Remplissage */
    acour = aprems;
-   strcpy(acour->symbole,"GOOG");
+   strcpy(acour->symbole,"GOOG");/*Attribue à la variable acour symbole la valeur GOOG*/
    acour->quantite = 100;
    acour->cours = 801.19;
-   acour->asuiv = NULL;
+   acour->asuiv = NULL;/*Prépare les informations sur le cours d'une action et sa quantité*/
 
    anouv = (struct action *)malloc(sizeof(struct action)); /*Définition de l'allocation mémoire pour anouv*/
    if (anouv==NULL)
@@ -35,10 +35,10 @@ int main()
    }
    acour->asuiv = anouv;
    acour = anouv;
-   strcpy(acour->symbole,"MSFT");
+   strcpy(acour->symbole,"MSFT");/*attribue à acour symbole la valeur MSFT*/
    acour->quantite = 100;
    acour -> cours = 28.77;
-   acour->asuiv = NULL;
+   acour->asuiv = NULL;/*Prépare les informations sur le cours d'une action et sa quantité*/
 /* Affichage */
    puts("Portefeuille");
    printf("Symbole\tQte\tCours\tValeur\n");
