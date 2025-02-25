@@ -20,7 +20,7 @@ int main()
 /* Affection des valeurs */
    strcpy(invest->symbole, "GOOG");
    invest->quantite = 100;
-   invest->cours = 801.19;
+   invest->cours = 801.19;/*Prépare les informations du cours des quantités et le nom de l'action.*/
 
 /* Affichage */
    puts("Portefeuille d'actions");
