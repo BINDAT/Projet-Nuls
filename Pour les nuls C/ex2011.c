@@ -38,4 +38,33 @@ int main()
         remplir_struct(acour,x+1);
     }
     acour->asuiv=NULL;
+
+/* Affichage */
+    puts("Portefeuille");
+    printf("Symbole\tQte\tCours\tVavleur\n");
+    acour = aprems;
+    while (acour)
+    {
+        montrer_struct(acour);
+        acour=acour->asuiv; 
+    }
+    return(0);
+}
+
+struct action *creer_struct(void)
+{
+    struct action *a;
+    
+    a=(struct action *)malloc(sizeof(struct action));
+    if (a==NULL)
+    {
+        puts("Erreur malloc()");
+        exit(1);
+    }
+    return(a);
+}
+
+void remplir_struct(struct action *a,int c)
+{
+    
 }
