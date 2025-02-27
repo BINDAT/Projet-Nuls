@@ -15,8 +15,8 @@ struct action *acour;
 struct action *anouv;
 
 struct action *creer_struct(void);
-void remplir_struct(struct action *a, int *c);
-void montrer_struct(struct action *a);
+void remplir_struc(struct action *a, int *c);
+void montrer_struc(struct action *a);
 
 int main()
 {
@@ -35,7 +35,7 @@ int main()
             acour->asuiv = anouv;
             acour = anouv;
         }
-        remplir_struct(acour,x+1);
+        remplir_struc(acour,x+1);
     }
     acour->asuiv=NULL;
 
@@ -45,7 +45,7 @@ int main()
     acour = aprems;
     while (acour)
     {
-        montrer_struct(acour);
+        montrer_struc(acour);
         acour=acour->asuiv; 
     }
     return(0);
@@ -64,7 +64,21 @@ struct action *creer_struct(void)
     return(a);
 }
 
-void remplir_struct(struct action *a,int c)
+void remplir_struc(struct action *a, int *c)
 {
-    
+    printf("Membre #%d/%d:\n",c,MEMBRE);
+    printf("Symbole: ");
+    scanf("%s", a->symbole);
+    printf("Nombre d'actions : ");
+    scanf("%d", &a->quantite);
+    printf("Cours : ");
+    scanf("%f", &a->cours);
+}
+void montrer_struc(struct action *a)
+{
+    printf("%-6s\t%5d\t%.2f\t%.2f\n",\ 
+        a->symbole,
+        a->quantite,
+        a->cours,
+        a->quantite*a->cours);
 }
