@@ -41,7 +41,7 @@ int main()
 
 /* Affichage */
     puts("Portefeuille");
-    printf("Symbole\tQte\tCours\tVavleur\n");
+    printf("Symbole\tQte\tCours\tValeur\n");
     acour = aprems;
     while (acour)
     {
