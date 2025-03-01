@@ -8,13 +8,13 @@ struct action {
     char symbole[5];
     int quantite;
     float cours;
-    struct action *asuiv;
+    struct action *asuiv; /*Champs de données de la structure action à plusieurs variable*/
 };
-struct action *aprems;
+struct action *aprems; 
 struct action *acour;
-struct action *anouv;
+struct action *anouv; /*Prévois des variable pointées pour la structure action*/
 
-struct action *creer_struct(void);
+struct action *creer_struct(void); /*Prévois une fonction void pour la structure*/
 void remplir_struc(struct action *a, int *c);
 void montrer_struc(struct action *a);
 
