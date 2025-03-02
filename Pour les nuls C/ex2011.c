@@ -35,7 +35,7 @@ int main()
             acour->asuiv = anouv;
             acour = anouv;/*appel fonction creer struct() avec acour->asuiv =anouv et acour = anouv; pour probablement faire un rappel de données en cas d'échec*/
         }
-        remplir_struc(acour,x+1);
+        remplir_struc(acour,x+1); /*Appel de la fonction remplir_struc(acour,x+1) ce qui permet de remplir les données et boucler en x+1*/
     }
     acour->asuiv=NULL;
 
@@ -59,7 +59,7 @@ struct action *creer_struct(void)
     if (a==NULL)
     {
         puts("Erreur malloc()");
-        exit(1);
+        exit(1);/*Si la mémoire saute la boucle for afficheras le message et elle même ré-exécutera le tout*/
     }
     return(a);
 }
@@ -72,7 +72,7 @@ void remplir_struc(struct action *a, int *c)
     printf("Nombre d'actions : ");
     scanf("%d", &a->quantite);
     printf("Cours : ");
-    scanf("%f", &a->cours);
+    scanf("%f", &a->cours);/*Permet l'affichage et le scan d'entrée de frappe de clavier*/
 }
 void montrer_struc(struct action *a)
 {
@@ -80,5 +80,12 @@ void montrer_struc(struct action *a)
         a->symbole,
         a->quantite,
         a->cours,
-        a->quantite*a->cours);
+        a->quantite*a->cours);/*affiche les donnée en fonction de la structure établie*/
+        /*a sert a reprendre est afficher les information saisit et créer par les autres fonctions*/
 }
+/*
+Observation : Ce code permet la saisit de 5 blocks de données d'action pour pouvoir 
+            les revoirs ensuite dans la console. La constance MEMBRE limite les blocks (actuellement à 5)
+            la boucle for appelle la fonction creer_struct() de action puis en fin de boucle le remplissage par remplir_struc()
+            puis le block d'affichage fait appelle à la fonction montrer_struc()
+*/
