@@ -6,13 +6,14 @@
 
 struct action {
     char symbole[5];
-    int quantite;
-    float cours;
+    int quantite; 
+    float cours; 
     struct action *asuiv; /*Champs de données de la structure action à plusieurs variable*/
 };
-struct action *aprems; 
-struct action *acour;
-struct action *anouv; /*Prévois des variable pointées pour la structure action*/
+/* Prototypes des fonctions */
+struct action *aprems; /* Pointeur vers la première action */
+struct action *acour; /* Pointeur temporaire pour le parcours */
+struct action *anouv; /* Pointeur pour la création de nouvelles actions. Prévois des variable pointées pour la structure action */
 
 struct action *creer_struct(void); /*Prévois une fonction void pour la structure*/
 void remplir_struc(struct action *a, int *c);
@@ -26,18 +27,19 @@ int main()
     {
         if (x==0)
         {
-            aprems=creer_struct();
-            acour=aprems;/*appel de la fonction creer_struc() avec acour=aprems*/
+            aprems=creer_struct();/*appelle de la fonction creer_struc() avec acour=aprems*/
+            acour=aprems;/*Création du premier élément*/
         }
         else
         {
-            anouv = creer_struct();
-            acour->asuiv = anouv;
-            acour = anouv;/*appel fonction creer struct() avec acour->asuiv =anouv et acour = anouv; pour probablement faire un rappel de données en cas d'échec*/
+            /*appelle fonction creer struct() avec acour->asuiv =anouv et acour = anouv; pour probablement faire un rappel de données en cas d'échec*/
+            anouv = creer_struct(); /*Création d'un nouvel élément*/
+            acour->asuiv = anouv; /*Chaînage avec l'élément précédent*/
+            acour = anouv; /*Déplacement du pointeur courant*/
         }
-        remplir_struc(acour,x+1); /*Appel de la fonction remplir_struc(acour,x+1) ce qui permet de remplir les données et boucler en x+1*/
+        remplir_struc(acour,x+1); /*Remplissage de action avec les données*/
     }
-    acour->asuiv=NULL;
+    acour->asuiv=NULL; /*Fin de chaîne*/
 
 /* Affichage */
     puts("Portefeuille");
@@ -45,8 +47,9 @@ int main()
     acour = aprems;
     while (acour)
     {
-        montrer_struc(acour); /*appel la fonction montrer_struc(acour) pour montrer toutes les données stock dans acour et acour=acour->asuiv;*/
-        acour=acour->asuiv; 
+        /*appel la fonction montrer_struc(acour) pour montrer toutes les données stock dans acour et acour=acour->asuiv;*/
+        montrer_struc(acour); /*Affichage des données de chaque action*/
+        acour=acour->asuiv; /*Passage à l'action suivante*/
     }
     return(0);
 }
