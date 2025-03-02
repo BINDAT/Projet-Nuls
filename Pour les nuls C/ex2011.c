@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define MEMBRE 5
+#define MEMBRE 5 /*Constante  MEMBRE limitée à 5*/
 
 struct action {
     char symbole[5];
@@ -22,18 +22,18 @@ int main()
 {
     int x;
 
-    for (x= 0;x<MEMBRE;x++)
+    for (x= 0;x<MEMBRE;x++)/*Boucle for de x=0 à x=MEMBRE sois 5 auto incrémente*/
     {
         if (x==0)
         {
             aprems=creer_struct();
-            acour=aprems;
+            acour=aprems;/*appel de la fonction creer_struc() avec acour=aprems*/
         }
         else
         {
             anouv = creer_struct();
             acour->asuiv = anouv;
-            acour = anouv;
+            acour = anouv;/*appel fonction creer struct() avec acour->asuiv =anouv et acour = anouv; pour probablement faire un rappel de données en cas d'échec*/
         }
         remplir_struc(acour,x+1);
     }
@@ -45,7 +45,7 @@ int main()
     acour = aprems;
     while (acour)
     {
-        montrer_struc(acour);
+        montrer_struc(acour); /*appel la fonction montrer_struc(acour) pour montrer toutes les données stock dans acour et acour=acour->asuiv;*/
         acour=acour->asuiv; 
     }
     return(0);
