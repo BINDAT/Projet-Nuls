@@ -48,3 +48,35 @@ int main()
     }
     return(0);
 }
+
+/* Affiche le menu et collecte le choix */
+int menu(void)
+{
+    int ch;
+
+    printf("M)onter, A)jouter, S)upprimer, Q)uitter: ");
+    ch = getchar();
+    while (getchar() != '\n') /* Ignore la saisie superflue */
+    
+        ;
+    return(toupper(ch));
+}
+
+/* Ajoute un membre en fin de liste */
+void ajouter(void)
+{
+    if (aprems == NULL) /* Cas unique de aprems */
+    {
+        aprems = creer();
+        acour = aprems;
+    }
+    else                /* Cherche le dernier */
+    {
+        acour = aprems;
+        while (acour->asuiv)    /* Dernier == NULL */
+            acour = acour->asuiv;
+        anouv = creer();
+        acour->asuiv = anouv;   /* Actualisation lien */
+        acour = anouv;
+    }
+}
