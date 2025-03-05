@@ -79,4 +79,67 @@ void ajouter(void)
         acour->asuiv = anouv;   /* Actualisation lien */
         acour = anouv;
     }
+    printf("Indiquez une valeur numérique : ");
+    scanf("%d", &acour->maval);
+    acour->asuiv = NULL;
+    while(getchar() != '\n')    /* Ignore la saisie superflue */
+        ;
+}
+
+/* Affiche tous les enregs de la liste */
+void montrer(void)
+{
+    int count = 1;
+    if (aprems == NULL) /* Liste vide */
+    {
+        puts("Rien à afficher");
+        return;
+    }
+    puts("Affichage complet :");
+    acour = aprems;
+    while (acour)   /* Dernier == NULL */
+    {
+        printf("Enregistrement %d: %d\n",count,acour->maval);
+        acour = acour->asuiv;
+        count++;
+    }   
+}
+
+/* Supprime un enreg de la liste */
+void supprimer(void)
+{
+    struct stypik *eprec; /* Sauve l'enreg d'avant*/
+    int r,c;
+
+    if(aprems == NULL)  /* Teste si liste vide*/
+    {
+        puts("Aucun enregistrement !");
+        return;
+    }
+    puts("Choisissez quel enreg. supprimer :");
+    montrer();
+    printf("Enregistrement : ");
+    scanf("%d",&r);
+    while(getchar() != '\n')    /* Ignore la saisie superflue */
+        ;
+    c = 1;
+    acour = aprems;
+    eprec = NULL;   /* Pas de precedent du 1er*/
+    while (c != r)
+    {
+        if(acour == NULL)   /* Teste si 'r' et dans la page */
+        {
+            puts("Enreg introuvable");
+            return;
+        }
+        eprec = acour;
+        acour = acour->asuiv;
+        c++;
+    }
+    if(eprec == NULL)   /* Cas unique du 1er enreg */
+        aprems = acour->asuiv;
+    else                /* Raccorde precedent et suivant */
+        eprec->asuiv = acour->asuiv;
+    printf("L'enreg %d n'existe plus.\n",r);
+    free(acour);        /* Restitue memoire */
 }
