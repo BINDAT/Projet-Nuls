@@ -39,8 +39,10 @@ int main()
         case 'A':
             ajouter();
             break;
-        case'Q':
+        case 'S':
             supprimer();
+            break;
+        case 'Q':
             break;
         default:
             break;
@@ -142,4 +144,18 @@ void supprimer(void)
         eprec->asuiv = acour->asuiv;
     printf("L'enreg %d n'existe plus.\n",r);
     free(acour);        /* Restitue memoire */
+}
+
+/* Construit une structure vide et renvoie son adresse */
+struct stypik *creer(void)
+{
+    struct stypik *a;
+
+    a = (struct stypik *)malloc(sizeof(struct stypik));
+    if (a == NULL)
+    {
+        puts("Erreur malloc()");
+        exit(1);
+    }
+    return(a);
 }
