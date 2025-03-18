@@ -12,10 +12,6 @@ int main()
     struct filmo bond;
     FILE *a007;
 
-    strcpy(bond.acteur, "Sean Connery");
-    bond.annee = 1962;
-    strcpy(bond.titre,"Dr. No");
-
     a007 = fopen("bond.db","r");
     if (!a007)
     {
