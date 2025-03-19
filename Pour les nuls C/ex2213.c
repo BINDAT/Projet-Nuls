@@ -12,18 +12,26 @@ int main()
     struct filmo bond;
     FILE *a007;
 
-    a007 = fopen("bond.db","r");
-    if (!a007)
-    {
-        puts("SPECTRE gagne !");
-        exit(1);
-    }
-    while (fread(&bond,sizeof(struct filmo), 1, a007))
-        printf("%s\t%d\t%s\n",
-            bond.acteur,
-            bond.annee,
-            bond.titre);
-    fclose(a007);
+    strcpy(bond.acteur, "Roger Moore");
+    bond.annee = 1973;
+    strcpy(bond.titre,"Live and Let Die");
     
+    a007 = fopen("bond.db","a");
+       
+        if (!a007)
+        {
+            puts("SPECTRE gagne !");
+            exit(1);
+        }
+        fwrite(&bond, sizeof(struct filmo), 1, a007);
+    
+    strcpy(bond.acteur, "Pierce Brosnan");
+    bond.annee = 1995;
+    strcpy(bond.titre,"GoldenEye");
+    
+    fwrite(&bond, sizeof(struct filmo), 1, a007);
+    fclose(a007);
+    puts("Enregistrement ecrit");
+
     return(0);
 }
