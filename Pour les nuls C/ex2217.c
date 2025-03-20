@@ -171,6 +171,7 @@ void charger(void)
 {
     char nom_fichier[256];
     FILE *entrée_saisie;
+    char menu;
     puts("Saisissez le nom de votre fichier : ");
     scanf("%s",nom_fichier);
     entrée_saisie = fopen(nom_fichier,"r");
@@ -178,6 +179,20 @@ void charger(void)
     {
         printf("Le fichier %s n'existe pas ou vous avez mal saisit le nom ou l'extension\n", nom_fichier);
         exit(1);
+    }
+    printf("Que souhaitez vous faire de %s ?\n ",nom_fichier);
+    puts("Juste voir les données ?(M) ou ajoutée des données en plus ?(A) défaut(M)");
+    switch (menu)
+    {
+    case 'M':
+        montrer();
+        break;
+    case 'A':
+        ajouter();
+        break;
+    default:
+        montrer();
+        break;
     }
     /*En réflexion*/
 }
