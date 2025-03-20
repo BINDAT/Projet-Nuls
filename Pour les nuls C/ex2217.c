@@ -171,7 +171,7 @@ void charger(void)
 {
     char nom_fichier[256];
     FILE *entrée_saisie;
-    char menu;
+    char menu_charge;
     puts("Saisissez le nom de votre fichier : ");
     scanf("%s",nom_fichier);
     entrée_saisie = fopen(nom_fichier,"r");
@@ -182,7 +182,8 @@ void charger(void)
     }
     printf("Que souhaitez vous faire de %s ?\n ",nom_fichier);
     puts("Juste voir les données ?(M) ou ajoutée des données en plus ?(A) défaut(M)");
-    switch (menu)
+    scanf("%s",&menu_charge);
+    switch (menu_charge)
     {
     case 'M':
         montrer();
@@ -204,6 +205,14 @@ struct stypik *sauvegarde(void)
     FILE *entrée_saisie;
     puts("Quel nom donner vous au fichier ? (n'oubliez pas l'extension du fichier) : ");
     fwrite(&acour, sizeof(struct stypik), 1,entrée_saisie);
+    acour = aprems;
+    int count = 0;
+    while (acour)   /* Dernier == NULL */
+    {
+        acour->maval,
+        acour = acour->asuiv;
+        count++;
+    }   
     fclose(entrée_saisie);
     printf("Fichier %s créer",nom_fichier);
     exit(1);
