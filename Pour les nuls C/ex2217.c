@@ -176,7 +176,7 @@ void charger(void)
     entrée_saisie = fopen(nom_fichier,"r");
     if(!entrée_saisie)
     {
-        printf("Le fichier %s n'existe pas \n", nom_fichier);
+        printf("Le fichier %s n'existe pas ou vous avez mal saisit le nom ou l'extension\n", nom_fichier);
         exit(1);
     }
     /*En réflexion*/
@@ -188,6 +188,9 @@ struct stypik *sauvegarde(void)
     char nom_fichier[256];
     FILE *entrée_saisie;
     puts("Quel nom donner vous au fichier ? (n'oubliez pas l'extension du fichier) : ");
-    entrée_saisie = fopen(nom_fichier,"w");
+    fwrite(&acour, sizeof(struct stypik), 1,entrée_saisie);
+    fclose(entrée_saisie);
+    printf("Fichier %s créer",nom_fichier);
+    exit(1);
     /*En réflexion*/
 }
