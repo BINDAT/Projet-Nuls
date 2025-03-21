@@ -91,15 +91,15 @@ void ajouter(void)
     scanf("%d", &acour->maval);
     acour->asuiv = NULL;
     while(getchar() != '\n');    /* Ignore la saisie superflue */
-    char choix_enreg = 'N';
+    char choix_enreg;
     puts("Voulez vous enregistrer ? (défaut N) : ");
     scanf("%c",&choix_enreg);
     toupper(&choix_enreg);
     if (choix_enreg == 'O')
     {
         sauvegarde();
-    }
-
+    }else{
+exit(1);
 }
 /* Affiche tous les enregs de la liste */
 void montrer(void)
