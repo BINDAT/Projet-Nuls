@@ -20,7 +20,7 @@ void montrer(void);
 void supprimer(void);
 struct stypik *creer(void);
 void charger(void);
-struct stypik *sauvegarde(void);
+void sauvegarde(void);
 
 /* La fonction main() ne se charge que de la saisie.
    Le reste est dans les fonctions.
@@ -199,7 +199,7 @@ void charger(void)
 }
 
 /* Sauvegarde des données */
-struct stypik *sauvegarde(void)
+void sauvegarde(void)
 {
     char nom_fichier[256];
     FILE *entrée_saisie;
