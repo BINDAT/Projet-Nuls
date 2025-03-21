@@ -209,7 +209,6 @@ void sauvegarde(void)
     int count = 0;
     while (acour)   /* Dernier == NULL */
     {
-        acour->maval,
         acour = acour->asuiv;
         count++;
     }   
