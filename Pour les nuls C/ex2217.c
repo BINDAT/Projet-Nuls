@@ -90,9 +90,16 @@ void ajouter(void)
     printf("Indiquez une valeur numérique : ");
     scanf("%d", &acour->maval);
     acour->asuiv = NULL;
-    while(getchar() != '\n')    /* Ignore la saisie superflue */
-        ;
-}
+    while(getchar() != '\n');    /* Ignore la saisie superflue */
+    char choix_enreg = 'N';
+    puts("Voulez vous enregistrer ? (défaut N) : ");
+    scanf("%c",&choix_enreg);
+    toupper(&choix_enreg);
+    if (choix_enreg == 'O')
+    {
+        sauvegarde();
+    }
+
 
 /* Affiche tous les enregs de la liste */
 void montrer(void)
