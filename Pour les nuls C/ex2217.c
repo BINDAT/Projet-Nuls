@@ -100,7 +100,7 @@ void ajouter(void)
         sauvegarde();
     }
 
-
+}
 /* Affiche tous les enregs de la liste */
 void montrer(void)
 {
