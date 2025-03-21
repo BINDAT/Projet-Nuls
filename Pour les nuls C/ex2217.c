@@ -99,7 +99,8 @@ void ajouter(void)
     {
         sauvegarde();
     }else{
-exit(1);
+        exit(1);
+    }
 }
 /* Affiche tous les enregs de la liste */
 void montrer(void)
