@@ -91,10 +91,10 @@ void ajouter(void)
     scanf("%d", &acour->maval);
     acour->asuiv = NULL;
     while(getchar() != '\n');    /* Ignore la saisie superflue */
-    char choix_enreg;
-    puts("Voulez vous enregistrer ? (défaut N) : ");
-    scanf("%c",&choix_enreg);
-    toupper(&choix_enreg);
+    char menu_enreg_ajouter;
+    puts("Voulez vous enregistrer ? Pour oui saisissez O : ");
+    scanf("%c",&menu_enreg_ajouter);
+    toupper(&menu_enreg_ajouter);
     if (choix_enreg == 'O')
     {
         sauvegarde();
@@ -211,17 +211,49 @@ void sauvegarde(void)
 {
     char nom_fichier[256];
     FILE *entrée_saisie;
-    puts("Quel nom donner vous au fichier ? (n'oubliez pas l'extension du fichier) : ");
-    fwrite(&acour, sizeof(struct stypik), 1,entrée_saisie);
-    acour = aprems;
-    int count = 0;
-    while (acour)   /* Dernier == NULL */
+    char choix_sauvegarde;
+    printf("Quelle sauvegarde voulez vous ? E)crassement/A)jout");
+    if (choix_sauvegarde == 'A')
     {
+        puts("Quel nom donner vous au fichier ? (n'oubliez pas l'extension du fichier) : ");
+        nom_fichier = fopen(entrée_saisie, "a");
+        printf("Fichier %s créer",nom_fichier);
+        fwrite(&acour, sizeof(struct stypik), 1,entrée_saisie);
+        acour = aprems;
+        int count = 0;
+    
+        while (acour)
+        {
         acour = acour->asuiv;
         count++;
-    }   
-    fclose(entrée_saisie);
-    printf("Fichier %s créer",nom_fichier);
-    exit(1);
-    /*En réflexion*/
+        }   
+        fclose(entrée_saisie);
+    
+        exit(1);
+        /*En réflexion*/
+    }
+    else if (choix_sauvegarde == 'E')
+    {
+         puts("Quel nom donner vous au fichier ? (n'oubliez pas l'extension du fichier) : ");
+         nom_fichier = fopen(entrée_saisie,"w");
+         printf("Fichier %s créer",nom_fichier);printf("Fichier %s créer",nom_fichier);
+         fwrite(&acour, sizeof(struct stypik), 1,entrée_saisie);
+         acour = aprems;
+         int count = 0;
+    
+         while (acour)
+         {
+         acour = acour->asuiv;
+         count++;
+         }   
+         fclose(entrée_saisie);
+    
+         exit(1);
+         /*En réflexion*/
+    }
+    else 
+    {
+        puts("ERREUR DANS LE CHOIX FIN DU PROGRAMME");
+        exit(1);
+    } 
 }
