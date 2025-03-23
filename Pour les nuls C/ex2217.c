@@ -212,11 +212,11 @@ void sauvegarde(void)
     char nom_fichier[256];
     FILE *entrée_saisie;
     char choix_sauvegarde;
-    printf("Quelle sauvegarde voulez vous ? E)crassement/A)jout");
+    printf("Quelle sauvegarde voulez vous ? E)crassement/A)jout autre lettre que A ou E mène à l afin du programme");
     if (choix_sauvegarde == 'A')
     {
         puts("Quel nom donner vous au fichier ? (n'oubliez pas l'extension du fichier) : ");
-        entrée_saisie = fopen(entrée_saisie, "a");
+        entrée_saisie = fopen(nom_fichier, "a");
         printf("Fichier %s créer",nom_fichier);
         fwrite(&acour, sizeof(struct stypik), 1,entrée_saisie);
         acour = aprems;
@@ -235,8 +235,9 @@ void sauvegarde(void)
     else if (choix_sauvegarde == 'E')
     {
          puts("Quel nom donner vous au fichier ? (n'oubliez pas l'extension du fichier) : ");
-         entrée_saisie = fopen(entrée_saisie,"w");
-         printf("Fichier %s créer",nom_fichier);printf("Fichier %s créer",nom_fichier);
+         entrée_saisie = fopen(nom_fichier,"w");
+         printf("Fichier %s créer",nom_fichier);
+         printf("Fichier %s créer",nom_fichier);
          fwrite(&acour, sizeof(struct stypik), 1,entrée_saisie);
          acour = aprems;
          int count = 0;
