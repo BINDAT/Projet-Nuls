@@ -94,8 +94,8 @@ void ajouter(void)
     char menu_enreg_ajouter;
     puts("Voulez vous enregistrer ? Pour oui saisissez O : ");
     scanf("%c",&menu_enreg_ajouter);
-    toupper(&menu_enreg_ajouter);
-    if (choix_enreg == 'O')
+    menu_enreg_ajouter = toupper(menu_enreg_ajouter);
+    if (menu_enreg_ajouter == 'O')
     {
         sauvegarde();
     }else{
@@ -181,7 +181,7 @@ void charger(void)
     FILE *entrée_saisie;
     char menu_charge;
     puts("Saisissez le nom de votre fichier : ");
-    scanf("%s",nom_fichier);
+    scanf("%c",nom_fichier);
     entrée_saisie = fopen(nom_fichier,"r");
     if(!entrée_saisie)
     {
@@ -216,7 +216,7 @@ void sauvegarde(void)
     if (choix_sauvegarde == 'A')
     {
         puts("Quel nom donner vous au fichier ? (n'oubliez pas l'extension du fichier) : ");
-        nom_fichier = fopen(entrée_saisie, "a");
+        entrée_saisie = fopen(entrée_saisie, "a");
         printf("Fichier %s créer",nom_fichier);
         fwrite(&acour, sizeof(struct stypik), 1,entrée_saisie);
         acour = aprems;
@@ -235,7 +235,7 @@ void sauvegarde(void)
     else if (choix_sauvegarde == 'E')
     {
          puts("Quel nom donner vous au fichier ? (n'oubliez pas l'extension du fichier) : ");
-         nom_fichier = fopen(entrée_saisie,"w");
+         entrée_saisie = fopen(entrée_saisie,"w");
          printf("Fichier %s créer",nom_fichier);printf("Fichier %s créer",nom_fichier);
          fwrite(&acour, sizeof(struct stypik), 1,entrée_saisie);
          acour = aprems;
