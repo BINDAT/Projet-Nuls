@@ -213,23 +213,15 @@ void sauvegarde(void)
     FILE *entrée_saisie;
     char choix_sauvegarde;
     printf("Quelle sauvegarde voulez vous ? E)crassement/A)jout autre lettre que A ou E mène à l afin du programme");
-    if (choix_sauvegarde == 'A')
+    scanf("%255s",nom_fichier);
+
+    entrée_saisie = fopen(nom_fichier, choix_sauvegarde == 'A' ? "a" : "w");
+    if (choix_sauvegarde !='A' && choix_sauvegarde != 'E')
     {
-        puts("Quel nom donner vous au fichier ? (n'oubliez pas l'extension du fichier) : ");
-        entrée_saisie = fopen(nom_fichier, "a");
-        printf("Fichier %s créer",nom_fichier);
-        
-        acour = aprems;
-        while (acour)
-        {
-            fwrite(acour, sizeof(struct stypik), 1, entrée_saisie);
-            acour = acour->asuiv;
-        }   
+        puts("ERREUR DANS LE CHOIX FIN DU PROGRAMME");
         exit(1);
-        
     }
-    else if (choix_sauvegarde == 'E')
-    {
+    else{  
          puts("Quel nom donner vous au fichier ? (n'oubliez pas l'extension du fichier) : ");
          entrée_saisie = fopen(nom_fichier,"w");
          printf("Fichier %s créer",nom_fichier);
@@ -242,11 +234,5 @@ void sauvegarde(void)
          }
     
          exit(1);
-         
-    }
-    else 
-    {
-        puts("ERREUR DANS LE CHOIX FIN DU PROGRAMME");
-        exit(1);
-    }
+        }
 }
