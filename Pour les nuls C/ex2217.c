@@ -181,7 +181,7 @@ void charger(void)
     FILE *entrée_saisie;
     char menu_charge;
     puts("Saisissez le nom de votre fichier : ");
-    scanf("%c",nom_fichier);
+    scanf("%255s",nom_fichier);
     entrée_saisie = fopen(nom_fichier,"r");
     if(!entrée_saisie)
     {
@@ -190,7 +190,7 @@ void charger(void)
     }
     printf("Que souhaitez vous faire de %s ?\n ",nom_fichier);
     puts("Juste voir les données ?(M) ou ajoutée des données en plus ?(A) défaut(M)");
-    scanf("%s",&menu_charge);
+    scanf(" %c",&menu_charge);
     switch (menu_charge)
     {
     case 'M':
@@ -218,43 +218,35 @@ void sauvegarde(void)
         puts("Quel nom donner vous au fichier ? (n'oubliez pas l'extension du fichier) : ");
         entrée_saisie = fopen(nom_fichier, "a");
         printf("Fichier %s créer",nom_fichier);
-        fwrite(&acour, sizeof(struct stypik), 1,entrée_saisie);
+        
         acour = aprems;
-        int count = 0;
-    
         while (acour)
         {
-        acour = acour->asuiv;
-        count++;
+            fwrite(acour, sizeof(struct stypik), 1, entrée_saisie);
+            acour = acour->asuiv;
         }   
-        fclose(entrée_saisie);
-    
         exit(1);
-        /*En réflexion*/
+        
     }
     else if (choix_sauvegarde == 'E')
     {
          puts("Quel nom donner vous au fichier ? (n'oubliez pas l'extension du fichier) : ");
          entrée_saisie = fopen(nom_fichier,"w");
          printf("Fichier %s créer",nom_fichier);
-         printf("Fichier %s créer",nom_fichier);
-         fwrite(&acour, sizeof(struct stypik), 1,entrée_saisie);
+         
          acour = aprems;
-         int count = 0;
-    
          while (acour)
          {
-         acour = acour->asuiv;
-         count++;
-         }   
-         fclose(entrée_saisie);
+             fwrite(acour, sizeof(struct stypik), 1, entrée_saisie);
+             acour = acour->asuiv;
+         }
     
          exit(1);
-         /*En réflexion*/
+         
     }
     else 
     {
         puts("ERREUR DANS LE CHOIX FIN DU PROGRAMME");
         exit(1);
-    } 
+    }
 }
