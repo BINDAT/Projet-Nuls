@@ -180,30 +180,37 @@ void charger(void)
     char nom_fichier[256];
     FILE *entrée_saisie;
     char menu_charge;
+
     puts("Saisissez le nom de votre fichier : ");
-    scanf("%255s",nom_fichier);
-    entrée_saisie = fopen(nom_fichier,"r");
-    if(!entrée_saisie)
+    scanf("%255s", nom_fichier);
+    entrée_saisie = fopen(nom_fichier, "r");
+
+    if (!entrée_saisie)
     {
-        printf("Le fichier %s n'existe pas ou vous avez mal saisit le nom ou l'extension\n", nom_fichier);
-        exit(1);
+        printf("Le fichier %s n'existe pas ou le nom est incorrect.\n", nom_fichier);
+        return;
     }
-    printf("Que souhaitez vous faire de %s ?\n ",nom_fichier);
-    puts("Juste voir les données ?(M) ou ajoutée des données en plus ?(A) défaut(M)");
-    scanf(" %c",&menu_charge);
-    switch (menu_charge)
+
+    // Chargement des données
+    aprems = NULL;
+    struct stypik *dernier = NULL;
+    while (!feof(entrée_saisie))
     {
-    case 'M':
-        montrer();
-        break;
-    case 'A':
-        ajouter();
-        break;
-    default:
-        montrer();
-        break;
+        struct stypik *nouv = (struct stypik *)malloc(sizeof(struct stypik));
+        if (fread(nouv, sizeof(struct stypik), 1, entrée_saisie) == 1)
+        {
+            nouv->asuiv = NULL;
+            if (!aprems)
+                aprems = nouv;
+            else
+                dernier->asuiv = nouv;
+            dernier = nouv;
+        }
+        else
+            free(nouv);
     }
-    /*En réflexion*/
+
+    fclose(entrée_saisie);
 }
 
 /* Sauvegarde des données */
