@@ -13,7 +13,7 @@ int main()
         puts("Lecture du dossier impossible");
         exit(1);
     }
-    while (fread(&nomdoss,sizeof(struct dirent),1,file))
+    while ((file = readdir(nomdoss))!= NULL)
     {
         file = readdir(nomdoss);
         printf("Nom du fichier ou dossier '%s'\n", file->d_name);
