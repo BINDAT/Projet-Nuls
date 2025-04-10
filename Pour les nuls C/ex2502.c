@@ -3,11 +3,11 @@
 
 int main()
 {
-    int x;
-    int *px;
+    int x; /*var non pointée*/
+    int *px; /*var pointée*/
 
-    px = &x;
-    for (x=0; x < 10; x++)
-        printf("%d", *px);
+    px = &x; /*prise en mémoire en non pointée*/
+    for (x=0; x < 10; x++)/*boucle avec auto incrémentation*/
+        printf("%d", *px);/*affichage*/
     return 0;
 }

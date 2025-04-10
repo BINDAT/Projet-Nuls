@@ -1,13 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <errno.h>
+#include <errno.h> /*Bibliothéque pour la gestion des erreurs*/
 
 int main()
 {
-    int e;
+    int e; /*création d'une variable entier e*/
 
-    e = rename("blorfus","fragus");
-    if( e != 0)
+    e = rename("blorfus","fragus"); /*Ici le renommage du fichier*/
+    if( e != 0)/*Quand un problème est trouver*/
     {
         printf("Erreur ! ");
         switch (errno)
@@ -32,7 +32,7 @@ int main()
             break;
         }
         exit(1);
-    }
+    }/*Quand tout ce passe bien*/
     puts("Le fichier porte le nouveau nom.");
     return 0;
 }
