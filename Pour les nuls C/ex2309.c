@@ -4,11 +4,11 @@
 
 int main()
 {
-    if (unlink("wambooli") == -1)
+    if (unlink("wambooli") == -1)/*Si suppression impossible du fichier*/
     {
-        puts("Impossible de supprimer ce fichier");
+        puts("Impossible de supprimer ce fichier");/*Message afficher en cas de problème de suppression*/
         exit(1);
     }
-    puts("Le fichier a disparu.");
+    puts("Le fichier a disparu.");/*En cas de réussite*/
     return(0);
 }
