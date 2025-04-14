@@ -8,13 +8,13 @@ int main()
         char acteur[32];
         int annee;
         char titre[32];
-    };
+    }; /*Création d'une structure pour s'en servir comme table de donnée*/
     struct filmo bond;
-    FILE *a007;
-    int count = 0;
+    FILE *a007; /*Var pointée type FILE*/
+    int count = 0; /*Pour la boucle de lecture*/
 
-    a007 = fopen("bond.db","r");
-    if (!a007)
+    a007 = fopen("bond.db","r");/*Lecture du fichier grâce à fopen et a007 pour la mémoire et l'option r*/
+    if (!a007)/*En cas de soucis de lecture du fichier*/
     {
         puts("SPECTRE gagne !");
         exit(1);
@@ -29,8 +29,8 @@ int main()
                 rewind(a007);
             count++;
             if(count>10) break;
-        }
-    fclose(a007);
+        }/*Boucle de lecture pour afficher ici plusieurs acteur année et titre de films*/
+    fclose(a007);/*Fermeture de lecture du fichier*/
     
     return(0);
 }
