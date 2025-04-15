@@ -25,8 +25,8 @@ int main()
                 bond.acteur,
                 bond.annee,
                 bond.titre);
-            if (ftell(a007)> sizeof(struct filmo))
-                rewind(a007);
+            if (ftell(a007)> sizeof(struct filmo)) /*Retourne la position actuelle*/
+                rewind(a007); /*Réinitialise la position du pointeur*/
             count++;
             if(count>10) break;
         }/*Boucle de lecture pour afficher ici plusieurs acteur année et titre de films*/
