@@ -1,4 +1,4 @@
-Value = input("Tapez moind de 8 caractères : ")
+Value = input("Tapez moins de 8 caractères : ")
 LetterNum = 1
 
 for Letter in Value:
