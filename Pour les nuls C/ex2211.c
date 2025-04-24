@@ -2,16 +2,16 @@
 #include <stdlib.h>
 #include <string.h>
 
-int main(int argc, char *argv[])
+int main(int argc, char *argv[]) /*Prend les arguments ici*/
 {
-    char nomfic[256];
-    FILE *dumpme;
-    int x,c; 
+    char nomfic[256]; /*Ici la var char pour fichier*/
+    FILE *dumpme; /*Contenu*/
+    int x,c; /*Boucle est contenus*/
     
     
     printf("Nom du fichier : ");
     
-    dumpme = fopen(nomfic, "r");
+    dumpme = fopen(nomfic, "r"); /*ouvre la lecture du fichier choisi*/
     if (!dumpme)
     {
         printf("Ouverture impossible de '%s'\n", nomfic);
@@ -26,6 +26,6 @@ int main(int argc, char *argv[])
             putchar('\n');   
     }
     putchar('\n');
-    fclose(dumpme);
+    fclose(dumpme); /*Ferme la lecture du fichier*/
     return(0);
 }
