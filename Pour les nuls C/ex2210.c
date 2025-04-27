@@ -3,14 +3,14 @@
 
 int main()
 {
-    char nomfic[255];
-    FILE *dumpme;
-    int x,c;
+    char nomfic[255]; /*Ici la var char pour fichier*/
+    FILE *dumpme; /*Contenu*/
+    int x,c; /*Boucle est contenus*/
 
     printf("Nom du fichier : ");
-    scanf("%s",nomfic);
-    dumpme = fopen(nomfic, "r");
-    if (!dumpme)
+    scanf("%s",nomfic); /*Prend la saisit de la clavier*/
+    dumpme = fopen(nomfic, "r"); /*ouvre la lecture du fichier choisi*/
+    if (!dumpme) /*En cas de problème*/
     {
         printf("Ouverture impossible de '%s'\n", nomfic);
         exit(1);
@@ -24,6 +24,6 @@ int main()
             putchar('\n');   
     }
     putchar('\n');
-    fclose(dumpme);
+    fclose(dumpme); /*Ferme la lecture du fichier*/
     return(0);
 }
