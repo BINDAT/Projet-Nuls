@@ -3,17 +3,17 @@
 
 int main()
 {
-    FILE *fh;
-    int ch;
+    FILE *fh; /*pour designer le fichier*/
+    int ch; /*pour lire le contenu*/
 
     fh=fopen("hello.txt","r"); // Mode lecture
-    if (fh==NULL)
+    if (fh==NULL) /*en cas de pépin*/
     {
         puts("Ouverture du fichier impossible");
         exit(1);
     }
-    while((ch=fgetc(fh))!=EOF)
-        putchar(ch);
-    fclose(fh);
+    while((ch=fgetc(fh))!=EOF) /*lis tout est affiche jusqu'à la fin*/
+        putchar(ch); /*affiche tout*/
+    fclose(fh); /*ferme le fichier*/
     return(0);
 }
