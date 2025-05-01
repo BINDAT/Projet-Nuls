@@ -29,6 +29,6 @@ void limiter(int stop)
   puts("Je gagne !");
 }
 /*
-Observation : ils manque a se code pour fonctionner corectement un moyen de verification de valeur sinon malgrer se fait il fonction est excute
+Observation : ils manque a se code pour fonctionner correctement un moyen de verification de valeur sinon malgré se fait il fonction est exécute
 le code jusqu'à return du printf vous avez gagnez.
 */
