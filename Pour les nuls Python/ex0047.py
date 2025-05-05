@@ -1,6 +1,6 @@
 import sys
 try:
-    raise ValueError
+    ##raise ValueError
     print("Exception levée")
 except ValueError:
     print("Exception ValueError !")
