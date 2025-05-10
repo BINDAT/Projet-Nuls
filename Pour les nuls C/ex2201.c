@@ -3,15 +3,15 @@
 
 int main()
 {
-    FILE *fh;
+    FILE *fh; /*Var pointée typedef FILE qui gère le fichier*/
 
-    fh=fopen("hello.txt","w"); // Mode ecriture
-    if (fh==NULL)
+    fh=fopen("hello.txt","w"); /*Ici créer le fichier hello.txt en mode écriture */
+    if (fh==NULL) /*En cas de pépin*/
     {
         puts("Ouverture du fichier impossible");
         exit(1);
     }
-    fprintf(fh, "Je laisse une trace.\n");
-    fclose(fh);
+    fprintf(fh, "Je laisse une trace.\n"); /*Ce qui est écrit dedans*/
+    fclose(fh); /*Fermeture du fichier*/
     return(0);
 }
