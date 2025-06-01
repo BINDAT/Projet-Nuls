@@ -1,1 +1,1 @@
-print(1+2)
+print(1+2) #affiche le résultat de 2 valeur 
