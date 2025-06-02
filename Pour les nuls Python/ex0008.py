@@ -1,2 +1,2 @@
 maVar = 5
-print(maVar)
+print(maVar) #affiche la val de la var.
