@@ -1,2 +1,2 @@
-def Hello3(Salutation = "Aucune valeur fournie"):
-    print(Salutation)
+def Hello3(Salutation = "Aucune valeur fournie"): #créer une fonction avec en paramètre une variable et sa valeur ici une chaîne de caractère.
+    print(Salutation) #affiche la valeur de la variable ici la chaîne de caractère
