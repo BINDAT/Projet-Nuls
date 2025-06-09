@@ -1,2 +1,2 @@
-ANumber = float(input("Tapez un nombre : "))
-print("Vous avez tapé : ", ANumber)
+ANumber = float(input("Tapez un nombre : ")) #Ici une variable float avec une prise de saisit
+print("Vous avez tapé : ", ANumber) #Affiche ce que vous avez entrée dans la variable sois la valeur de la variable
