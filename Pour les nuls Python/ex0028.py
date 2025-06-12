@@ -3,11 +3,11 @@ print("2. Orange")
 print("3. Jaune")
 print("4. Vert")
 print("5. Bleu")
-print("6. Pourpre")
+print("6. Pourpre") #Affichage
 
-Choice = int(input("Choisissez votre couleur favorite : "))
+Choice = int(input("Choisissez votre couleur favorite : ")) #variable avec demande de saisit et un affichage
 
-if (Choice == 1):
+if (Choice == 1): #condition à choix multiple en fonction du nombre choisi
     print("Vous avez choisi Rouge !")
 elif (Choice == 2):
     print("Vous avez choisi Orange !")
