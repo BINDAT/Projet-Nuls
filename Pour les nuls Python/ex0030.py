@@ -1,21 +1,21 @@
 print("1. Oeufs")
 print("2. Crêpes")
 print("3. Gaufres")
-print("4. Céréales")
-MainChoice = int(input("Que voulez-vous au petit déjeuner ? "))
+print("4. Céréales")#affichage
+MainChoice = int(input("Que voulez-vous au petit déjeuner ? "))#Variable avec un affichage est avec entrée de saisit
 
-if (MainChoice == 2):
+if (MainChoice == 2): #Panel de choix
     Meal = "Crêpes"
 elif (MainChoice == 3):
     Meal = "Gaufre"
 
-if (MainChoice == 1):
+if (MainChoice == 1): #Panel de choix
     print("1. Galette au froment")
     print("2. Beignet")
     print("3. Galette de seigle")
     print("4. Crêpe nature")
     Pancake = int(input("Choisissez un type de crêpe : "))
-    if (Pancake == 1):
+    if (Pancake == 1): #Panel de choix
         print("Vous avez choisi des oeufs avec une galette au froment.")
     elif (Pancake == 2):
         print("Vous avez choisi des oeufs avec des beignets.")
