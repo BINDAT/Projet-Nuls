@@ -1,6 +1,6 @@
-MyTuple = MyTuple.__add__(("Violet",))
-MyTuple
+MyTuple = MyTuple.__add__(("Violet",)) #ajoute un élément à une liste
+MyTuple #appel la var
 
 MyTuple = MyTuple.__add__(("Jaune",
-                           ("Orange", "Noir")))
-MyTuple[4]
+                           ("Orange", "Noir"))) #ajoute un élément et sous élément à une liste
+MyTuple[4] #Montre la var sur sont cinquième élément
