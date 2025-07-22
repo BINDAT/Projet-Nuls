@@ -9,4 +9,4 @@ MyTuple[5] #montre la val sur le sixième élément (ici les sous éléments)
 
 type(MyTuple[5]) == tuple #ici ont regarde si un sixième élément est stocké
 
-MyTuple[5][0] #montre spécifique le sixième élément sous sont premier sous élément 
+MyTuple[5][0] #montre spécifiquement le sixième élément sous sont premier sous élément 
