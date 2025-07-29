@@ -7,3 +7,13 @@ MonEntreprise = {"Propriétaire": "Moi",
                                352: "Sylvie"}
                 }
 MonEntreprise
+
+def DisplayDict(Dict):
+    for key, value in Dict.items():
+        if type(value) == dict:
+            print(f"Le service {key} est composé de :")
+            DisplayDict(value)
+        else:
+            print(f"{value} est {key}")
+
+DisplayDict(MonEntreprise)
