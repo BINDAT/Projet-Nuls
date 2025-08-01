@@ -14,3 +14,14 @@ ColorSelect = {
     3: PrintJaune
     
 }
+
+Selection = 0
+while (Selection != 4):
+    print("0. Bleu")
+    print("1. Rouge")
+    print("2. Orange")
+    print("3. Jaune")
+    print("4. Quitter")
+    Selection = int(input("Sélectionnez une option de couleur : "))
+    if (Selection >= 0) and (Selection <4):
+        ColorSelect[Selection]()
