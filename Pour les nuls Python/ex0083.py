@@ -5,5 +5,5 @@ MyInstance = MyClass() #Création d'une instance de MyClass
 
 MyInstance.MyVar #Accès à la variable MyVar de l'instance MyInstance
 
-print(dir(MyInstance))
-help('__class__')
+print(dir(MyInstance)) #Liste des attributs et méthodes de l'instance MyInstance
+help('__class__') #Affiche l'aide pour la variable spéciale __class__
