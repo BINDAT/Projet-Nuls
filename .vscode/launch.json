@@ -5,6 +5,13 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "DeuxEquipes",
+            "request": "launch",
+            "mainClass": "DeuxEquipes",
+            "projectName": "Projet-Nuls_d2e37bab"
+        },
+        {
             "name": "Débogueur Python : Fichier actuel",
             "type": "debugpy",
             "request": "launch",
