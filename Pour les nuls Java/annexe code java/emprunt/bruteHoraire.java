@@ -1,6 +1,6 @@
-double brutHoraire, paie, net;
-int heures;
+double brutHoraire, paie, net; // salaire brut, salaire net
+int heures; // nombre d'heures travaillées
 
-brutHoraire = 12.25;
-heures = 35;
-paie = brutHoraire * heures;
+brutHoraire = 12.25; // taux horaire en euros
+heures = 35; // nombre d'heures travaillées dans le mois
+paie = brutHoraire * heures; // calcul de la paie brute

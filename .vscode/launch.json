@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Divination",
+            "request": "launch",
+            "mainClass": "Divination",
+            "projectName": "Projet-Nuls_d2e37bab"
+        },
+        {
+            "type": "java",
             "name": "DeuxEquipes",
             "request": "launch",
             "mainClass": "DeuxEquipes",
