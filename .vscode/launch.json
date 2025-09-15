@@ -6,19 +6,12 @@
     "configurations": [
         {
             "type": "java",
-            "name": "Divination",
+            "name": "Configuration Générique",
             "request": "launch",
-            "mainClass": "Divination",
-            "projectName": "Projet-Nuls_d2e37bab"
+            "mainClass": "com.example.Main"
         },
         {
-            "type": "java",
-            "name": "DeuxEquipes",
-            "request": "launch",
-            "mainClass": "DeuxEquipes",
-            "projectName": "Projet-Nuls_d2e37bab"
-        },
-        {
+    
             "name": "Débogueur Python : Fichier actuel",
             "type": "debugpy",
             "request": "launch",
