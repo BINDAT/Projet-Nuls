@@ -9,7 +9,7 @@ class SnitSoftCD {
         dTotal = dPrixCD + dPort; // addition des deux variables dans dTotal
 
         System.out.print("Nous allons prélever ");
-        System.out.print(dTotal);
+        System.out.print(dTotal); // affichage de la variable dTotal
         System.out.println(" € sur votre carte bancaire.");
     }
 }
