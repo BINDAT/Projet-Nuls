@@ -6,12 +6,18 @@
     "configurations": [
         {
             "type": "java",
+            "name": "NicePrice",
+            "request": "launch",
+            "mainClass": "NicePrice",
+            "projectName": "Projet-Nuls_d2e37bab"
+        },
+        {
+            "type": "java",
             "name": "Configuration Générique",
             "request": "launch",
             "mainClass": "com.example.Main"
         },
         {
-    
             "name": "Débogueur Python : Fichier actuel",
             "type": "debugpy",
             "request": "launch",
