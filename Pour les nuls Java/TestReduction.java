@@ -29,5 +29,7 @@ class TestReduction {
         System.out.print(dPrix);
         System.out.print("€.");
         System.out.println("Bon spectacle !");
+
+        clavier.close();
     }
 }
