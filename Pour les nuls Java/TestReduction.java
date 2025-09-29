@@ -25,5 +25,9 @@ class TestReduction {
             dPrix -= 2.00;
         }
     
+        System.out.print("Vous devez ");
+        System.out.print(dPrix);
+        System.out.print("€.");
+        System.out.println("Bon spectacle !");
     }
 }
