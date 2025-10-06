@@ -15,10 +15,20 @@ class TabloScore {
         out.println();
 
         if (canaris > estac) {
-            eQui = QuiGagne.VISITEURS
+            eQui = QuiGagne.VISITEURS;
             out.println("Victoire des Jaunes :-(");
         } else if (estac > canaris){
-            
+            eQui = QuiGagne.LOCAUX;
+            out.println("Les Bleus gagnent :-)");
+        } else {
+            eQui = QuiGagne.AUCUN;
+            out.println("C'est un match nul :-|");
         }
+
+        out.println();
+        out.println("Ce jeu vous est offert par SnitSoft");
+        out.println("votre partenaire mineur.");
+        out.println();
+
     }
 }
