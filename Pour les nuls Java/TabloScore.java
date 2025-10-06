@@ -28,7 +28,25 @@ class TabloScore {
         out.println();
         out.println("Ce jeu vous est offert par SnitSoft");
         out.println("votre partenaire mineur.");
+        out.println("dans le Chapitre 6");
+        out.println("SnitSoft, essayé et recommandé");
+        out.println("par de grandes marques.");
+        out.println("SnitSoft vous souhaite un bon match/");
         out.println();
 
+        if (eQui == QuiGagne.LOCAUX) {
+            out.println("C'est une victoire amplement méritée ");
+        }
+
+        if (eQui == QuiGagne.VISITEURS) {
+            out.println("L'arbitre nous a volé un pénalty !");
+            out.println("Mais nous auront notre revanche au match retour !");
+        }
+
+        if (eQui == QuiGagne.AUCUN) {
+            out.println("Un bon match nul pour la suite du championnat !");
+        }
+
+        clavier.close();
     }
 }
