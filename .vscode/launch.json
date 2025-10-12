@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CompterMonnaie",
+            "request": "launch",
+            "mainClass": "CompterMonnaie",
+            "projectName": "Projet-Nuls_d2e37bab"
+        },
+        {
+            "type": "java",
             "name": "TestReduc2",
             "request": "launch",
             "mainClass": "TestReduc2",
