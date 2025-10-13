@@ -1,6 +1,6 @@
 char lettreNote;
 lettreGrade =
-    clavier.findWithinHorizon(".",0).charAt(0);
+    clavier.findWithinHorizon(".",0).charAt(0); // lire un caractère seul
 
 switch (lettreNote) {
     case 'A':
