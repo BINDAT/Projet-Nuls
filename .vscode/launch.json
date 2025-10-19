@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Switchex",
+            "request": "launch",
+            "mainClass": "Switchex",
+            "projectName": "Projet-Nuls_d2e37bab"
+        },
+        {
+            "type": "java",
             "name": "CompterMonnaie",
             "request": "launch",
             "mainClass": "CompterMonnaie",
