@@ -56,7 +56,10 @@ public class OubliBreak {
                 out.println(" la marée soit haute.");
 
             default:
-                out.;
+                out.print("Vous pensez que vous");
+                out.print(" avez des problèmes ?");
+                out.print(" Mon générateur de nombres");
+                out.println(" aléatoires est en panne !");
         }
         
         out.println("Au revoir !");
