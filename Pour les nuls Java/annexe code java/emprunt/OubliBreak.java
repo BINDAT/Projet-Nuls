@@ -2,21 +2,21 @@
  * Ce n'est pas du bon code. Le programmeur a oublié
  * plusieurs instruction break.
  */
-import java.util.Scanner;
-import java.util.Random;
-import static java.lang.System.out;
+import java.util.Scanner; // Pour la saisie au clavier
+import java.util.Random; // Pour
+import static java.lang.System.out; // Pour simplifier les affichages
 
 public class OubliBreak {
 
     public static void main(String args[]) {
-        Scanner clavier = new Scanner(System.in);
-        Random monGenAlea = new Random();
-        int nAleatoire;
+        Scanner clavier = new Scanner(System.in); // Pour la saisie au clavier
+        Random monGenAlea = new Random(); // Pour le générateur de nombres aléatoires
+        int nAleatoire; // Pour stocker le nombre aléatoire
 
         out.print("Tapez votre question, mon enfant : ");
         clavier.nextLine();
 
-        nAleatoire = monGenAlea.nextInt(10) + 1;
+        nAleatoire = monGenAlea.nextInt(10) + 1; // Nombre aléatoire entre 1 et 10
 
         switch (nAleatoire) {
             case 1:
@@ -64,6 +64,6 @@ public class OubliBreak {
         
         out.println("Au revoir !");
         
-        clavier.close();
+        clavier.close(); // Fermer le scanner pour éviter les fuites de mémoire
     }
 }
