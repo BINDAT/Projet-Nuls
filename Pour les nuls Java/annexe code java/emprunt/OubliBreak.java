@@ -53,7 +53,7 @@ public class OubliBreak {
 
             case 10:
                 out.print("Non pas avant que");
-                out.println(" la marée soit haute.");
+                out.println(" la marée soit basse.");
 
             default:
                 out.print("Vous pensez que vous");
