@@ -1,13 +1,13 @@
-import java.util.Scanner;
+import java.util.Scanner; // Importation de la classe Scanner pour la saisie clavier
 
 class JoursDansMois {
     public static void main(String args[]) {
         Scanner clavier = new Scanner(System.in);
-        int nMois, nNbrJours = 0;
-        boolean bSextile;
+        int nMois, nNbrJours = 0; // Initialisation du nombre de jours à 0
+        boolean bSextile; // Variable pour indiquer si l'année est bissextile
 
         System.out.print("Quel mois ?");
-        nMois = clavier.nextInt();
+        nMois = clavier.nextInt(); // Lecture du numéro du mois saisi par l'utilisateur
 
         switch (nMois) {
             case 1:
@@ -15,30 +15,30 @@ class JoursDansMois {
             case 5:
             case 7:
             case 8:
-            case 10:
-            case 12:
-                nNbrJours = 31;
+            case 10: 
+            case 12: // Mois avec 31 jours
+                nNbrJours = 31; // Attribution du nombre de jours
                 break;
             
             case 4:
             case 6:
             case 9:
-            case 11:
-                nNbrJours = 30;
+            case 11: // Mois avec 30 jours
+                nNbrJours = 30; // Attribution du nombre de jours
                 break;
             
-            case 2:
+            case 2: // Février, nombre de jours dépendant de l'année bissextile
                 System.out.print("Année bissextile (true/false) ?");
-                bSextile = clavier.nextBoolean();
+                bSextile = clavier.nextBoolean(); // Lecture de la valeur bissextile
                 if (bSextile) {
-                    nNbrJours = 29;
+                    nNbrJours = 29; // Année bissextile
                 } else {
-                    nNbrJours = 28;
+                    nNbrJours = 28; // Année non bissextile
                 }
         }
-        System.out.print(nNbrJours);
+        System.out.print(nNbrJours); // Affichage du nombre de jours
         System.out.println(" jours");
 
-        clavier.close();
+        clavier.close(); // Fermeture du scanner pour éviter les fuites de ressources
     }
 }
