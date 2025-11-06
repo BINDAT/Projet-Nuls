@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "XtrakEssai2",
+            "request": "launch",
+            "mainClass": "XtrakEssai2",
+            "projectName": "Projet-Nuls_d2e37bab"
+        },
+        {
+            "type": "java",
+            "name": "XtrakEssai1",
+            "request": "launch",
+            "mainClass": "XtrakEssai1",
+            "projectName": "Projet-Nuls_d2e37bab"
+        },
+        {
+            "type": "java",
+            "name": "BlackJack",
+            "request": "launch",
+            "mainClass": "BlackJack",
+            "projectName": "Projet-Nuls_d2e37bab"
+        },
+        {
+            "type": "java",
             "name": "Deck",
             "request": "launch",
             "mainClass": "Deck",
