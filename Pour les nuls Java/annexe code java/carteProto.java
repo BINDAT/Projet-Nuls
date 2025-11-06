@@ -1,7 +1,7 @@
 //Code préliminaire - FINALISÉ
 import java.util.Random; // Importation de la classe Random
 
-class Deck {
+class BlackJack {
     public static void main (String args[]){
         int carte, total = 0; // Initialisation des variables
         Random monGenAlea = new Random(); // Création d'un générateur de nombres aléatoires
