@@ -1,3 +1,6 @@
+/*
+ * Ce code marche presque, mais il reste une petite erreur.
+ */
 import java.util.Scanner;
 
 class XtrakEssai2 {  
@@ -7,9 +10,8 @@ class XtrakEssai2 {
         char cSymb = ' ';
 
         while (cSymb != '@') {
-            cSymb = clavier.findWithinHorizon(".", 0).charAt(0);
-
             System.out.print(cSymb);
+            cSymb = clavier.findWithinHorizon(".", 0).charAt(0);
         }
 
         System.out.print(cSymb);
