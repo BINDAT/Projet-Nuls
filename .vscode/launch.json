@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CalculDeTotal",
+            "request": "launch",
+            "mainClass": "CalculDeTotal",
+            "projectName": "Projet-Nuls_d2e37bab"
+        },
+        {
+            "type": "java",
+            "name": "LireEcrire",
+            "request": "launch",
+            "mainClass": "Test.LireEcrire",
+            "projectName": "Projet-Nuls_d2e37bab"
+        },
+        {
+            "type": "java",
             "name": "LireEcrire",
             "request": "launch",
             "mainClass": "LireEcrire",

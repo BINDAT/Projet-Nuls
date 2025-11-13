@@ -1,12 +1,13 @@
-import java.util.Scanner; // Pour la lecture au clavier et dans les fichiers
 import java.io.File; // Pour la lecture de fichiers
 import java.io.FileNotFoundException; // Pour la gestion des exceptions
 import java.io.PrintStream; // Pour l'écriture dans les fichiers
+import java.util.Scanner; // Pour la lecture au clavier et dans les fichiers
 
 public class LireEcrire {
     
     public static void main(String args []) 
                         throws FileNotFoundException{ // Gestion des exceptions
+                            
         Scanner dsc = new Scanner(new File("rawData.txt")); // Lecture du fichier rawData.txt
         PrintStream dsqScripteur = 
             new PrintStream("cookedData.txt"); // Écriture dans le fichier cookedData.txt
