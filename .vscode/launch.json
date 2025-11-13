@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "LireEcrire",
+            "request": "launch",
+            "mainClass": "LireEcrire",
+            "projectName": "Projet-Nuls_d2e37bab"
+        },
+        {
+            "type": "java",
             "name": "XtrakEssai2",
             "request": "launch",
             "mainClass": "XtrakEssai2",
