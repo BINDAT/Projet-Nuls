@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "JusteEcrire",
+            "request": "launch",
+            "mainClass": "JusteEcrire",
+            "projectName": "Projet-Nuls_d2e37bab"
+        },
+        {
+            "type": "java",
             "name": "CalculDeTotal",
             "request": "launch",
             "mainClass": "CalculDeTotal",
