@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "EcrireOK",
+            "request": "launch",
+            "mainClass": "EcrireOK",
+            "projectName": "Projet-Nuls_d2e37bab"
+        },
+        {
+            "type": "java",
             "name": "JusteEcrire",
             "request": "launch",
             "mainClass": "JusteEcrire",
