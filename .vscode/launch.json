@@ -5,20 +5,26 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "java",
-            "name": "Lancer — Classe Java active",
-            "request": "launch",
-            // Utilise le nom de fichier actif (sans extension) comme nom de classe.
-            // Fonctionne pour les classes dans le package par défaut.
-            "mainClass": "${fileBasenameNoExtension}",
-            "console": "integratedTerminal"
-        },
-        {
-            "name": "Débogueur Python : Fichier actuel",
+            "name": "Débogueur Python : Fichier actuel",
             "type": "debugpy",
             "request": "launch",
             "program": "${file}",
             "console": "integratedTerminal"
+        },
+        {
+            "name": "Debug Java : Lancer le fichier Java actuel",
+            "type": "java",
+            "request": "launch",
+            "mainClass": "${fileBasenameNoExtension}",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "name": "Debug Java : Attacher au port 5005",
+            "type": "java",
+            "request": "attach",
+            "hostName": "localhost",
+            "port": 5005
         }
     ]
 }
