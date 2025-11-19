@@ -6,114 +6,12 @@
     "configurations": [
         {
             "type": "java",
-            "name": "EcrireOK",
+            "name": "Lancer — Classe Java active",
             "request": "launch",
-            "mainClass": "EcrireOK",
-            "projectName": "Projet-Nuls_d2e37bab"
-        },
-        {
-            "type": "java",
-            "name": "JusteEcrire",
-            "request": "launch",
-            "mainClass": "JusteEcrire",
-            "projectName": "Projet-Nuls_d2e37bab"
-        },
-        {
-            "type": "java",
-            "name": "CalculDeTotal",
-            "request": "launch",
-            "mainClass": "CalculDeTotal",
-            "projectName": "Projet-Nuls_d2e37bab"
-        },
-        {
-            "type": "java",
-            "name": "LireEcrire",
-            "request": "launch",
-            "mainClass": "Test.LireEcrire",
-            "projectName": "Projet-Nuls_d2e37bab"
-        },
-        {
-            "type": "java",
-            "name": "LireEcrire",
-            "request": "launch",
-            "mainClass": "LireEcrire",
-            "projectName": "Projet-Nuls_d2e37bab"
-        },
-        {
-            "type": "java",
-            "name": "XtrakEssai2",
-            "request": "launch",
-            "mainClass": "XtrakEssai2",
-            "projectName": "Projet-Nuls_d2e37bab"
-        },
-        {
-            "type": "java",
-            "name": "XtrakEssai1",
-            "request": "launch",
-            "mainClass": "XtrakEssai1",
-            "projectName": "Projet-Nuls_d2e37bab"
-        },
-        {
-            "type": "java",
-            "name": "BlackJack",
-            "request": "launch",
-            "mainClass": "BlackJack",
-            "projectName": "Projet-Nuls_d2e37bab"
-        },
-        {
-            "type": "java",
-            "name": "Deck",
-            "request": "launch",
-            "mainClass": "Deck",
-            "projectName": "Projet-Nuls_d2e37bab"
-        },
-        {
-            "type": "java",
-            "name": "JoursDansMois",
-            "request": "launch",
-            "mainClass": "JoursDansMois",
-            "projectName": "Projet-Nuls_d2e37bab"
-        },
-        {
-            "type": "java",
-            "name": "OubliBreak",
-            "request": "launch",
-            "mainClass": "OubliBreak",
-            "projectName": "Projet-Nuls_d2e37bab"
-        },
-        {
-            "type": "java",
-            "name": "Switchex",
-            "request": "launch",
-            "mainClass": "Switchex",
-            "projectName": "Projet-Nuls_d2e37bab"
-        },
-        {
-            "type": "java",
-            "name": "CompterMonnaie",
-            "request": "launch",
-            "mainClass": "CompterMonnaie",
-            "projectName": "Projet-Nuls_d2e37bab"
-        },
-        {
-            "type": "java",
-            "name": "TestReduc2",
-            "request": "launch",
-            "mainClass": "TestReduc2",
-            "projectName": "Projet-Nuls_d2e37bab"
-        },
-        {
-            "type": "java",
-            "name": "NicePrice",
-            "request": "launch",
-            "mainClass": "NicePrice",
-            "projectName": "Projet-Nuls_d2e37bab"
-        },
-        {
-            "type": "java",
-            "name": "Configuration Générique",
-            "request": "launch",
-            "mainClass": "com.example.Main"
+            // Utilise le nom de fichier actif (sans extension) comme nom de classe.
+            // Fonctionne pour les classes dans le package par défaut.
+            "mainClass": "${fileBasenameNoExtension}",
+            "console": "integratedTerminal"
         },
         {
             "name": "Débogueur Python : Fichier actuel",
