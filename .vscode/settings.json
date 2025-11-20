@@ -1,4 +1,14 @@
 {
+    "java.configuration.runtimes": [
+        {
+        "name": "JavaSE-25",
+        "path": "/usr/lib/jvm/java-25-openjdk-amd64",
+        },
+        {
+        "name": "JavaSE-17",
+        "path": "/usr/lib/jvm/java-17-openjdk-amd64",
+        }
+    ],
     "java.debug.settings.onBuildFailureProceed": true,
     "java.debug.settings.console": "integratedTerminal",
 
@@ -10,22 +20,10 @@
         "lineComment": "%"
     },
     "brackets": [
-        [
-            "(",
-            ")"
-        ],
-        [
-            "[",
-            "]"
-        ],
-        [
-            "{",
-            "}"
-        ],
-        [
-            "%{",
-            "%}"
-        ]
+        ["(", ")"],
+        ["[", "]"],
+        ["{", "}"],
+        ["%{", "%}"]
     ],
     "autoClosingPairs": [
         {
@@ -57,26 +55,11 @@
         }
     ],
     "surroundingPairs": [
-        [
-            "(",
-            ")"
-        ],
-        [
-            "[",
-            "]"
-        ],
-        [
-            "{",
-            "}"
-        ],
-        [
-            "'",
-            "'"
-        ],
-        [
-            "\"",
-            "\""
-        ]
+        ["(", ")"],
+        ["[", "]"],
+        ["{", "}"],
+        ["'", "'"],
+        ["\"", "\""]
     ],
     "indentationRules": {
         "increaseIndentPattern": "^\\s*\\b(?:for|parfor|spmd|if|elseif|else|while|try|catch|switch|function|classdef|properties|enumeration|events|methods|arguments)\\b",
