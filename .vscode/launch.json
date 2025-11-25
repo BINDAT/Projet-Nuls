@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ListeSymboles",
+            "request": "launch",
+            "mainClass": "ListeSymboles",
+            "projectName": "Projet-Nuls_d2e37bab"
+        },
+        {
+            "type": "java",
             "name": "LesDixMachesChezEdna",
             "request": "launch",
             "mainClass": "LesDixMachesChezEdna",
