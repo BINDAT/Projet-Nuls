@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ListeCombinaison",
+            "request": "launch",
+            "mainClass": "ListeCombinaison",
+            "projectName": "Projet-Nuls_d2e37bab"
+        },
+        {
+            "type": "java",
             "name": "ListeSymboles",
             "request": "launch",
             "mainClass": "ListeSymboles",
