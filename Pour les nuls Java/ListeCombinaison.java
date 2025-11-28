@@ -1,19 +1,19 @@
-import static java.lang.System.out;
+import static java.lang.System.out; // Importation de la classe System pour simplifier les appels à out
 
 class ListeCombinaison {
-   enum Symbole {
-         cerise, citron, orange, banane
+   enum Symbole { // Déclaration de l'énumération Symbole
+         cerise, citron, orange, banane // Les différents symboles possibles de l’énumération Symbole
     }
     
-    public static void main(String args[]) {
-        for (Symbole eRoueGauche : Symbole.values()){
-            for (Symbole eRoueCentre : Symbole.values()){
-                for (Symbole eRoueDroite : Symbole.values()){
-                    out.print(eRoueGauche);
+    public static void main(String args[]) { // Méthode principale de la classe ListeCombinaison
+        for (Symbole eRoueGauche : Symbole.values()){ // Boucle pour parcourir toutes les combinaisons possibles
+            for (Symbole eRoueCentre : Symbole.values()){ // Boucle imbriquée pour parcourir toutes les combinaisons possibles
+                for (Symbole eRoueDroite : Symbole.values()){ // Boucle imbriquée pour parcourir toutes les combinaisons possibles
+                    out.print(eRoueGauche); // Affichage du symbole de la roue gauche
                     out.print(" ");
-                    out.print(eRoueCentre);
+                    out.print(eRoueCentre); // Affichage du symbole de la roue centrale
                     out.print(" ");
-                    out.println(eRoueDroite);
+                    out.println(eRoueDroite); // Affichage du symbole de la roue droite
                 }
             }
         }
