@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "OccupanceHotel",
+            "request": "launch",
+            "mainClass": "OccupanceHotel",
+            "projectName": "Projet-Nuls_d2e37bab"
+        },
+        {
+            "type": "java",
             "name": "ListeCombinaison",
             "request": "launch",
             "mainClass": "ListeCombinaison",
