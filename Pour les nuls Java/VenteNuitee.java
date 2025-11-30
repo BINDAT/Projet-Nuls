@@ -28,7 +28,7 @@ class VenteNuitee {
             for (int nCham = 0; nCham < 10; nCham++){
                 out.print(nCham);
                 out.print("\t\t");
-                out.print(statutCh[nCham]);
+                out.println(statutCh[nCham]);
             }
 
             clavier.close();
