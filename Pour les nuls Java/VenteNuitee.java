@@ -18,6 +18,7 @@ class VenteNuitee {
             nChambre = clavier.nextInt();
             out.print("Combien de Personnes ? ");
             nPersonnes = clavier.nextInt();
+            statutCh[nChambre] = nPersonnes;
 
             out.println();
             out.print("Autre chambre ? ");
