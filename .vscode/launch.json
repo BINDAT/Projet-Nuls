@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "TestMo3PaOK",
+            "request": "launch",
+            "mainClass": "TestMo3PaOK",
+            "projectName": "Projet-Nuls_d2e37bab"
+        },
+        {
+            "type": "java",
             "name": "VenteNuitee",
             "request": "launch",
             "mainClass": "VenteNuitee",
