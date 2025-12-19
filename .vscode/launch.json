@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "TraiteComptesMieux",
+            "request": "launch",
+            "mainClass": "TraiteComptesMieux",
+            "projectName": "Projet-Nuls_d2e37bab"
+        },
+        {
+            "type": "java",
+            "name": "TraiteCompte",
+            "request": "launch",
+            "mainClass": "TraiteCompte",
+            "projectName": "Projet-Nuls_d2e37bab"
+        },
+        {
+            "type": "java",
+            "name": "TraiteBonsComptes",
+            "request": "launch",
+            "mainClass": "TraiteBonsComptes",
+            "projectName": "Projet-Nuls_d2e37bab"
+        },
+        {
+            "type": "java",
             "name": "TestMo3Proto",
             "request": "launch",
             "mainClass": "TestMo3Proto",
