@@ -10,5 +10,10 @@ public class Livres {
         System.out.println(libroPLN.getTitre());   //
         System.out.println(arduiPLK.getAuteur());   //
         System.out.println(progPLN);
+
+        // *** Version moderne avec record !
+//  RecBouquin recbo = new RecBouquin("Scribus PAO", "Heinrich Merzig", 2016);
+//  System.out.println(recbo.sTitre());             //
+//  System.out.println(recbo);             //
     }
 }
