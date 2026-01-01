@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Livres",
+            "request": "launch",
+            "mainClass": "Livres",
+            "projectName": "Projet-Nuls_d2e37bab"
+        },
+        {
+            "type": "java",
             "name": "TraiteComptesMieux",
             "request": "launch",
             "mainClass": "TraiteComptesMieux",
