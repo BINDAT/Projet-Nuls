@@ -6,6 +6,7 @@
             </font>
         </Label>
         <Label font="$x1" text="Téléphone" GridPane.columnIndex="1" GridPane.rowIndex="0" />
-        <Label font="$x1" text="Téléphone" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+        <Label text="Alice" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+        <Label text="555-1234" GridPane.columnIndex="1" GridPane.rowIndex="1" />
     </children>
 </GridPane>
