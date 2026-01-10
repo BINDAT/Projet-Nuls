@@ -1,0 +1,11 @@
+<GridPane gridLinesVisible="true" layoutX="100.0" layoutY="165.0">
+    <children>
+        <Label text="Nom" GridPane.columnIndex="0" GridPane.rowIndex="0">
+            <font>
+                <Font name="System Bold" size="12.0" fx:id="x1" />
+            </font>
+        </Label>
+        <Label font="$x1" text="Téléphone" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+        <Label font="$x1" text="Téléphone" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+    </children>
+</GridPane>
