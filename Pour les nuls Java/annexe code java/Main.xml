@@ -8,5 +8,9 @@
         <Label font="$x1" text="Téléphone" GridPane.columnIndex="1" GridPane.rowIndex="0" />
         <Label text="Alice" GridPane.columnIndex="0" GridPane.rowIndex="1" />
         <Label text="555-1234" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <Label text="Paul" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+        <Label text="555-4321" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+        <Label text="Carole" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+        <Label text="555-3000" GridPane.columnIndex="1" GridPane.rowIndex="3" />
     </children>
 </GridPane>
