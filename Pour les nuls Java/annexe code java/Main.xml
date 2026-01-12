@@ -1,16 +1,16 @@
-<GridPane gridLinesVisible="true" layoutX="100.0" layoutY="165.0">
-    <children>
-        <Label text="Nom" GridPane.columnIndex="0" GridPane.rowIndex="0">
+<GridPane gridLinesVisible="true" layoutX="100.0" layoutY="165.0"> <!-- GridPane pour afficher les informations de contact -->
+    <children> <!-- Contenu du GridPane -->
+        <Label text="Nom" GridPane.columnIndex="0" GridPane.rowIndex="0"> <!-- En-tête de la colonne Nom -->
             <font>
-                <Font name="System Bold" size="12.0" fx:id="x1" />
+                <Font name="System Bold" size="12.0" fx:id="x1" /> <!-- Police en gras pour l'en-tête -->
             </font>
         </Label>
-        <Label font="$x1" text="Téléphone" GridPane.columnIndex="1" GridPane.rowIndex="0" />
-        <Label text="Alice" GridPane.columnIndex="0" GridPane.rowIndex="1" />
-        <Label text="555-1234" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-        <Label text="Paul" GridPane.columnIndex="0" GridPane.rowIndex="2" />
-        <Label text="555-4321" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-        <Label text="Carole" GridPane.columnIndex="0" GridPane.rowIndex="3" />
-        <Label text="555-3000" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+        <Label font="$x1" text="Téléphone" GridPane.columnIndex="1" GridPane.rowIndex="0" /> <!-- En-tête de la colonne Téléphone -->
+        <Label text="Alice" GridPane.columnIndex="0" GridPane.rowIndex="1" /> <!-- Première entrée de contact -->
+        <Label text="555-1234" GridPane.columnIndex="1" GridPane.rowIndex="1" /> <!-- Numéro de téléphone d'Alice -->
+        <Label text="Paul" GridPane.columnIndex="0" GridPane.rowIndex="2" /> <!-- Deuxième entrée de contact -->
+        <Label text="555-4321" GridPane.columnIndex="1" GridPane.rowIndex="2" /> <!-- Numéro de téléphone de Paul -->
+        <Label text="Carole" GridPane.columnIndex="0" GridPane.rowIndex="3" /> <!-- Troisième entrée de contact -->
+        <Label text="555-3000" GridPane.columnIndex="1" GridPane.rowIndex="3" /> <!-- Numéro de téléphone de Carole -->
     </children>
-</GridPane>
+</GridPane> <!-- Fin du GridPane -->
