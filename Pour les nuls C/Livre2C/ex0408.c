@@ -2,6 +2,6 @@
 
 int main() // Fonction principale du programme
 {
-    puts("Ce programme fait BOUM !"); // Affiche le message à l'écran 
+    puts("Ce programme fait BOUM !) 
     return(0); // Indique que le programme s'est terminé avec succès
 }
