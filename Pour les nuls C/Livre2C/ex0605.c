@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+#define blorf 22
+
+int main()
+{
+    printf("La valeur de blorf est %d.\n",blorf);
+    printf("La valeur de blorf +16 est %d.\n",blorf + 16);
+    printf("La valeur de blorf puissance 2 est %d.\n",blorf *blorf);
+}
