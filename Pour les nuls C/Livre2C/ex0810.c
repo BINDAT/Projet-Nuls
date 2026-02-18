@@ -1,13 +1,13 @@
-#include <stdio.h>
+#include <stdio.h> // Inclusion de la bibliothèque standard d'entrée/sortie
 
 int main()
 {
-    int a,b;
+    int a,b; // Déclaration de deux variables entières a et b
 
-    a = 6;
-    b = a - 2;
+    a = 6; // Affectation de la valeur 6 à la variable a
+    b = a - 2; // Affection de la valeur -2 à la variable b
 
-    if (a > b)
+    if (a > b) //Condition de contrôle de supériorité de a contre b
     {
         printf("%d est plus grand que %d\n",a,b);
     }
