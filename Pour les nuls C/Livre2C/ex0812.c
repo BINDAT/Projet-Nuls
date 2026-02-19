@@ -1,0 +1,25 @@
+#include <stdio.h> // Inclusion de la bibliothèque standard d'entrée/sortie
+
+int main()
+{
+    int a,b; // Déclaration de deux variables entières a et b
+
+    a = 6; // Affectation de la valeur 6 à la variable a
+    printf("Veuillez saisir un nombre entier pour b (b a un -2 sur lui même et a est égal à 6) : ");
+    scanf("%d", &b); // Lecture de la valeur de b à partir de l'entrée standard
+    b = b - 2; // Affection de la valeur -2 à la variable b
+
+    if (a > b) //Condition de contrôle de supériorité de a contre b
+    {
+        printf("%d est plus grand que %d\n",a,b);
+    }
+    else if (a == b) //Condition de contrôle d'égalité de a contre b
+    {
+        printf("%d est égal à %d\n",a,b);
+    }
+    else //Condition de contrôle d'infériorité de a contre b
+    {
+        printf("%d n'est pas plus grand que %d\n",a,b);
+    }
+    return(0);
+}
