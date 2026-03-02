@@ -4,7 +4,7 @@ int main()
 {
     int x;
 
-    for (x = 0; x < 10; x=x+1) // boucle qui s'exécute 10 fois
+    for (x = 0; x < 20; x=x+1) // boucle qui s'exécute 20 fois
     {
         puts("Ne vous l'ais-je pas encore dit ?"); // affichage de la phrase à chaque itération
     }
