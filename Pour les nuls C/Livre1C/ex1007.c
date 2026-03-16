@@ -27,12 +27,12 @@ void graph(int cmptr)
     putchar('\n');
 }
 /*
-Observation : ce code compte en multipliant pa *2 jusqu'a 64 par la var val qui est entree dans les parametres de la boucle qui multiplie elle meme la val par la
- *2 puis un fonction protype compte en void graph compte avec la val x et pas chiffre mais en '*' jusqu'a 64 s'arretant quand la boucle avec valeur atteint 64.
+Observation : ce code compte en multipliant pa *2 jusqu'a 64 par la var val qui est entree dans les paramètres de la boucle qui multiplie elle meme la val par la
+ *2 puis un fonction protype compte en void graph compte avec la val x et pas chiffre mais en '*' jusqu'a 64 s’arrêtant quand la boucle avec valeur atteint 64.
 */
 /*
-Oberservation de solution :
+Observation de solution :
 Solution possible valeur = 64 ou 64 ou valeur <= 64
 Ses solutions bloque la val graph pour se bloquer a hauteur de la valeur dite que cela sois d'une var ou d'une val
-resultat d'affichage different de la methode definie
+résultat d'affichage different de la méthode définie
 */
