@@ -9,10 +9,9 @@ int main() //instruction primaire
 
     valeur = 2; //valeur de la var cible
     
-
     while(valeur <= 64)
     {
-       graph(valeur, cmptr); //prend en compte deux var dans les paramètres 
+       graph(valeur, valeur); //prend en compte deux var dans les paramètres 
         printf("La valeur est %d\n", valeur);
         valeur = valeur * 2; //reprise de la var cible avec auto assignation a l’opération
 
