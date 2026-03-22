@@ -1,51 +1,56 @@
 #include <stdio.h> // pour printf et putchar
+#include <stdlib.h>
 #include <stdbool.h>
+#include <time.h> // Pour utiliser time()
+
 
 bool verifier(int valeur);
 
-void limiter(int stop); // prototype de la fonction limiter
+void limiter(int nombre_du_joueur, int nombre_du_robot, int nombre_du_code); // prototype de la fonction limiter
 
 int main()
 {
-    int s; // déclaration de la variable s de type int
-
+    int nombre_du_joueur; // déclaration de la variable s de type int
+    srand(time(NULL));
+    int nombre_du_robot = rand() %101;
     printf("Indiquez une valeur pour stopper (0-100) : "); // affichage d'un message pour demander à l'utilisateur de saisir une valeur pour stopper
-    scanf("%d", &s); // lecture de la valeur saisie par l'utilisateur et stockage dans la variable s
-    if (verifier(s))
+    scanf("%d", &nombre_du_joueur); // lecture de la valeur saisie par l'utilisateur et stockage dans la variable s
+    if (verifier(nombre_du_joueur))
     {
-        limiter(s); // appel de la fonction limiter avec s comme argument
+        limiter(nombre_du_joueur, nombre_du_robot); // appel de la fonction limiter avec s comme argument
     }
-    else if(s<0)
+    else if(nombre_du_joueur<0)
     {
         puts("nombre négatif non pris en charge");
     }
-    else if(s>100)
+    else if(nombre_du_joueur>100)
     {
         puts("Ne dois pas aller au dessus de la limite");
+    }
+    else
+    {
+        puts("Quelque chose ne vas pas");
     }
     return(0);
 }
 
-void limiter(int stop)
+void limiter(int nombre_du_joueur, int nombre_du_robot, int nombre_du_code)
 {
-    int x; // déclaration de la variable x de type int
-    for (x=0; x<=100; x=x+1)
-    {
-        printf("%d ", x); // affichage de la valeur de x suivie d'un espace
-        if (x == stop)
+        if (nombre_du_joueur == nombre_du_robot)
         {
-            puts("Vous gagnez !\n"); // affichage d'un message indiquant que l'utilisateur a gagné si x est égal à stop
+            printf("\nVous gagnez ! %d %d\n", nombre_du_joueur, nombre_du_robot); // affichage d'un message indiquant que l'utilisateur a gagné si x est égal à stop
             return;
         }
-        else if()
+        else if(nombre_du_joueur != nombre_du_robot)
         {
-            puts("Je gagne!");
+            printf("\nJe gagne! %d %d\n",nombre_du_joueur, nombre_du_robot);
+            return;
         }
         else
         {
-            puts("Personne ne gagne");
+            printf("\nPersonne ne gagne %d %d\n", nombre_du_joueur, nombre_du_robot);
+            return;
         }
-    }
 }
 
 bool verifier(int valeur)

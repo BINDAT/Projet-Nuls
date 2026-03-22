@@ -31,25 +31,25 @@ bool verifier(int valeur){
 //fonction de définition de void limiter
 void limiter(int stop, int ordi_stop) //point de comparaison
 {
-  //instructions du void limiter
-  int x;
-  for(x=0; x<=100; x=x+1)//limite a 100 avec gain de +1 dans la boucle
+  int boucle;
+  for (boucle = 0; boucle<=100; boucle++)
   {
-    printf("%d", x);
-    if(x == stop)
-      {
-        puts("Vous gagnez !");
-        return;
-      }
+    printf("%d\t",boucle);
   }
-  if(x == ordi_stop){
-    puts("L'ordi gagne!");
-    return;
+  putchar('\n');
+  //instructions du void limiter
+  if (stop == ordi_stop)
+  {
+    printf("Tu gagne !");
   }
-  puts("Personne ne gagne");
+  else
+  {
+    printf("Je gagne mon nombre est : %d", ordi_stop);
+  } 
+  
 }
 
 /*
-Observation : Le code ce termine sans erreur et fonctionne correctemment. il permet un petit duel entre l'ordinateur avec une boucle qui compte les nombres et une verification que cela est bien dans la plage
+Observation : Le code ce termine sans erreur et fonctionne correctement. il permet un petit duel entre l'ordinateur avec une boucle qui compte les nombres et une verification que cela est bien dans la plage
 des nombres demander.
 */
