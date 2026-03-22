@@ -10,15 +10,15 @@ void limiter(int nombre_du_joueur, int nombre_du_robot, int nombre_du_code); // 
 
 int main()
 {
-    int nombre_du_joueur; // déclaration de la variable s de type int
+    int nombre_du_joueur;
     srand(time(NULL));
     int nombre_du_robot = rand() %101; 
     int nombre_du_code = rand() %101;
-    printf("Indiquez une valeur pour stopper (0-100) : "); // affichage d'un message pour demander à l'utilisateur de saisir une valeur pour stopper
-    scanf("%d", &nombre_du_joueur); // lecture de la valeur saisie par l'utilisateur et stockage dans la variable s
+    printf("Indiquez une valeur pour stopper (0-100) : "); 
+    scanf("%d", &nombre_du_joueur);
     if (verifier(nombre_du_joueur))
     {
-        limiter(nombre_du_joueur, nombre_du_robot, nombre_du_code); // appel de la fonction limiter avec s comme argument
+        limiter(nombre_du_joueur, nombre_du_robot, nombre_du_code);
     }
     else if(nombre_du_joueur<0)
     {
