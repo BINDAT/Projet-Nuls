@@ -11,8 +11,19 @@ int main()
 
     printf("Indiquez une valeur pour stopper (0-100) : "); // affichage d'un message pour demander à l'utilisateur de saisir une valeur pour stopper
     scanf("%d", &s); // lecture de la valeur saisie par l'utilisateur et stockage dans la variable s
-    limiter(s); // appel de la fonction limiter avec s comme argument
-    return(0); // fin de la fonction principale, retourne 0 pour indiquer que le programme s'est terminé avec succès
+    if (verifier(s))
+    {
+        limiter(s); // appel de la fonction limiter avec s comme argument
+    }
+    else if(s<0)
+    {
+        puts("nombre négatif non pris en charge");
+    }
+    else if(s>100)
+    {
+        puts("Ne dois pas aller au dessus de la limite");
+    }
+    return(0);
 }
 
 void limiter(int stop)
@@ -23,15 +34,21 @@ void limiter(int stop)
         printf("%d ", x); // affichage de la valeur de x suivie d'un espace
         if (x == stop)
         {
-            puts("Vous gagnez !"); // affichage d'un message indiquant que l'utilisateur a gagné si x est égal à stop
-            return; // fin de la fonction limiter, retourne à l'appelant
+            puts("Vous gagnez !\n"); // affichage d'un message indiquant que l'utilisateur a gagné si x est égal à stop
+            return;
         }
-        
+        else if()
+        {
+            puts("Je gagne!");
+        }
+        else
+        {
+            puts("Personne ne gagne");
+        }
     }
-    puts("Je gagne !"); // affichage d'un message indiquant que l'ordinateur a gagné si la boucle se termine sans que x soit égal à stop
 }
 
 bool verifier(int valeur)
 {
-    return(valeur >= 0 && valeur <= 100);
+    return(valeur >= 0 & valeur <= 100);
 }
