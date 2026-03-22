@@ -12,12 +12,13 @@ int main()
 {
     int nombre_du_joueur; // déclaration de la variable s de type int
     srand(time(NULL));
-    int nombre_du_robot = rand() %101;
+    int nombre_du_robot = rand() %101; 
+    int nombre_du_code = rand() %101;
     printf("Indiquez une valeur pour stopper (0-100) : "); // affichage d'un message pour demander à l'utilisateur de saisir une valeur pour stopper
     scanf("%d", &nombre_du_joueur); // lecture de la valeur saisie par l'utilisateur et stockage dans la variable s
     if (verifier(nombre_du_joueur))
     {
-        limiter(nombre_du_joueur, nombre_du_robot); // appel de la fonction limiter avec s comme argument
+        limiter(nombre_du_joueur, nombre_du_robot, nombre_du_code); // appel de la fonction limiter avec s comme argument
     }
     else if(nombre_du_joueur<0)
     {
@@ -36,19 +37,24 @@ int main()
 
 void limiter(int nombre_du_joueur, int nombre_du_robot, int nombre_du_code)
 {
-        if (nombre_du_joueur == nombre_du_robot)
+        if (nombre_du_joueur == nombre_du_code && nombre_du_robot == nombre_du_code)
         {
-            printf("\nVous gagnez ! %d %d\n", nombre_du_joueur, nombre_du_robot); // affichage d'un message indiquant que l'utilisateur a gagné si x est égal à stop
+            printf("\nVous gagnez et le robot ! %d \n", nombre_du_code);
             return;
         }
-        else if(nombre_du_joueur != nombre_du_robot)
+        else if(nombre_du_joueur != nombre_du_code && nombre_du_robot != nombre_du_code)
         {
-            printf("\nJe gagne! %d %d\n",nombre_du_joueur, nombre_du_robot);
+            printf("\nPersonne ne gagne vous avez %d le robot à choisi %d et le nombre à deviner était %d\n",nombre_du_joueur, nombre_du_robot, nombre_du_code);
             return;
         }
-        else
+        else if(nombre_du_joueur == nombre_du_code && nombre_du_robot != nombre_du_code)
         {
-            printf("\nPersonne ne gagne %d %d\n", nombre_du_joueur, nombre_du_robot);
+            printf("\nVous seul(e) gagner %d le robot a choisi %d\n", nombre_du_joueur, nombre_du_robot);
+            return;
+        }
+        else if(nombre_du_joueur != nombre_du_code && nombre_du_robot == nombre_du_code)
+        {
+            printf("Seul le robot gagne %d votre nombre %d",nombre_du_robot, nombre_du_joueur);
             return;
         }
 }
