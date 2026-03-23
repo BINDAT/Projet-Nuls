@@ -1,19 +1,19 @@
 #include <stdio.h> // pour printf et putchar
 #include <stdlib.h>
-#include <stdbool.h>
+#include <stdbool.h> // Pour créer et utilser une fonction boolean san souicis
 #include <time.h> // Pour utiliser time()
 
 
-bool verifier(int valeur);
+bool verifier(int valeur); // prototype de la fonction verifier 
 
 void limiter(int nombre_du_joueur, int nombre_du_robot, int nombre_du_code); // prototype de la fonction limiter
 
-int main()
+int main() // fonction principale
 {
-    int nombre_du_joueur;
-    srand(time(NULL));
-    int nombre_du_robot = rand() %101; 
-    int nombre_du_code = rand() %101;
+    int nombre_du_joueur; // pour que le joueur entre sont nombre
+    srand(time(NULL)); // pour utiliser de l'aléatoire
+    int nombre_du_robot = rand() %101; // le robot utilise un nombre aléatoire
+    int nombre_du_code = rand() %101; // le nombre à deviner ici est aléatoire
     printf("Indiquez une valeur pour stopper (0-100) : "); 
     scanf("%d", &nombre_du_joueur);
     if (verifier(nombre_du_joueur))
@@ -61,5 +61,5 @@ void limiter(int nombre_du_joueur, int nombre_du_robot, int nombre_du_code)
 
 bool verifier(int valeur)
 {
-    return(valeur >= 0 & valeur <= 100);
+    return(valeur >= 0 && valeur <= 100);
 }
