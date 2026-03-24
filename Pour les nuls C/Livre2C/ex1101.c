@@ -2,7 +2,9 @@
 
 int main()
 {
-    for(int boucle = 0; boucle <= 10; boucle++)
+    int boucle;
+
+    for(boucle = 0; boucle <= 10; boucle++)
     {
         puts("Ne marchez pa sur ma pelouse!");
     }
