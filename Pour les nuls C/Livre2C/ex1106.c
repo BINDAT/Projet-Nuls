@@ -6,7 +6,7 @@ int main()
 
     b=16;
     printf("Avant, a ne change pas encore et b = %d\n", b);
-    a=b++;
+    a= ++b;
     printf("Après, a = %d et b = %d\n", a, b);
     return(0);
 }
