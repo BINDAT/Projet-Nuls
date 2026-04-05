@@ -6,13 +6,13 @@ int main() // fonction principale du programme
 
     alpha = 501; // affectation de la valeur 501 à la variable alpha
     printf("alpha = %.1f\n",alpha); // affichage de la valeur de alpha avec une décimale, suivi d'un saut de ligne
-    alpha = alpha+99; // addition de 99 à la valeur actuelle de alpha et affectation du résultat à alpha
+    alpha+=99; // addition de 99 à la valeur actuelle de alpha et affectation du résultat à alpha
     printf("alpha = %.1f\n",alpha); // affichage de la nouvelle valeur de alpha avec une décimale, suivi d'un saut de ligne
-    alpha = alpha-250; // soustraction de 250 à la valeur actuelle de alpha et affectation du résultat à alpha
+    alpha-=250; // soustraction de 250 à la valeur actuelle de alpha et affectation du résultat à alpha
     printf("alpha = %.1f\n",alpha); // affichage de la nouvelle valeur de alpha avec une décimale, suivi d'un saut de ligne
-    alpha = alpha/82; // division de la valeur actuelle de alpha par 82 et affectation du résultat à alpha
+    alpha/=82; // division de la valeur actuelle de alpha par 82 et affectation du résultat à alpha
     printf("alpha = %.1f\n",alpha); // affichage de la nouvelle valeur de alpha avec une décimale, suivi d'un saut de ligne
-    alpha = alpha*4.3; // multiplication de la valeur actuelle de alpha par 4.3 et affectation du résultat à alpha
+    alpha*=4.3; // multiplication de la valeur actuelle de alpha par 4.3 et affectation du résultat à alpha
     printf("alpha = %.1f\n",alpha); // affichage de la nouvelle valeur de alpha avec une décimale, suivi d'un saut de ligne
     return(0); // retour de la valeur 0 pour indiquer que le programme s'est terminé avec succès
 }
