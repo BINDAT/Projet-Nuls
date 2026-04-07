@@ -119,7 +119,7 @@
             "type": "cppdbg",
             "request": "launch",
             "program": "${fileDirname}/${fileBasenameNoExtension}",
-            "args": [],
+            "args": ["-g", "-o", "-lm"],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
             "environment": [],
