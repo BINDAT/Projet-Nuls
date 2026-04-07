@@ -1,5 +1,5 @@
-#include <stdio.h>
-#include <math.h>
+#include <stdio.h> // Pour les entrées et sorties
+#include <math.h> // Pour les opérations mathématiques plus complexes
 
 int main()
 {
