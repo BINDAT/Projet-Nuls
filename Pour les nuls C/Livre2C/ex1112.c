@@ -7,7 +7,8 @@ int main ()
     nombre = 2;
     for (boucle = 0; boucle <=10; boucle++)
     {
-        printf("Nombre = %.2f, pow = %.2f cumul = %.2f", nombre, valeur, nombre = pow(valeur[boucle]));
+        valeur = pow(nombre, boucle);
+printf("Voici vos puissance %2.f", valeur);
     }
    return(0); 
 }
