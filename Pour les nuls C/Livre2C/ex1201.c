@@ -1,20 +1,20 @@
-#include <stdio.h>
+#include <stdio.h> // Entête pour les fonctions d'entrée/sortie
 
-int main()
+int main() // Fonction principale du programme
 {
-    int scoremax1, scoremax2,scoremax3;
+    int scoremax1, scoremax2,scoremax3; // Déclaration de trois variables entières pour stocker les scores
 
     printf("Votre meilleur score: ");
-    scanf("%d",&scoremax1);
+    scanf("%d",&scoremax1); // Lecture du premier score et stockage dans la variable scoremax1
     printf("Second meilleur score: ");
-    scanf("%d",&scoremax2);
+    scanf("%d",&scoremax2); // Lecture du second score et stockage dans la variable scoremax2
     printf("Troisième meilleur score: ");
-    scanf("%d",&scoremax3);
+    scanf("%d",&scoremax3); // Lecture du troisième score et stockage dans la variable scoremax3
 
-    puts("");
-    printf("#1 %d\n",scoremax1);
-    printf("#2 %d\n",scoremax2);
-    printf("#3 %d\n",scoremax3);
+    puts("Voici vos meilleurs scores"); // Affichage d'un message pour introduire les scores
+    printf("#1 %d\n",scoremax1); // Affichage du premier score avec un format spécifique
+    printf("#2 %d\n",scoremax2); // Affichage du second score avec un format spécifique
+    printf("#3 %d\n",scoremax3); // Affichage du troisième score avec un format spécifique
 
-    return(0);
+    return(0); // Retourne 0 pour indiquer que le programme s'est terminé avec succès
 }
