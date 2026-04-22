@@ -2,7 +2,7 @@
 
 int main()
 {
-    float tabBourseFin[5]; // Déclaration d'un tableau de 10 entiers pour stocker les scores
+    float tabBourseFin[5]; // Déclaration d'un tableau de 5 éléments pour stocker les valeurs de la bourse
     int jours; // Déclaration d'une variable entière pour les boucles
 
     tabBourseFin[0] = 14450.06;
