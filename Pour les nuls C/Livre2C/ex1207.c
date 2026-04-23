@@ -1,16 +1,18 @@
-#include <stdio.h> // Affiche une phrase caractère par caractère
+#include <stdio.h> // Entête pour les fonctions d'entrée/sortie
 
-int main() // Affiche une phrase caractère par caractère
+int main()
 {
-    char phrase[] = "Texte insignifiant"; // Phrase à afficher
-    int index; // Index de caractère
+    int tabBourseDebut[] = {10, 12, 14, 16, 18, 20}; // Déclaration d'un tableau de 5 éléments pour stocker les valeurs de la bourse
+    int copie; // Déclaration d'une variable entière pour les boucles
+    int taBourseFin[] = {};
 
-    index = 0; // Initialisation de l'index
-    while (phrase[index] != '\0') // Tant que le caractère n'est pas le caractère de fin de chaîne
+    for (copie = 0; copie<=tabBourseDebut[copie]; copie++)
     {
-        putchar(phrase[index]); // Affiche le caractère à l'index actuel
-        index++; // Incrémente l'index pour passer au caractère suivant
+        tabBourseDebut[copie] = taBourseFin[copie];
     }
-    putchar('\n'); // Affiche une nouvelle ligne après avoir affiché la phrase
-    return(0); // Indique que le programme s'est terminé avec succès
+    for (int affichage = 0; affichage <= 5; affichage++)
+    {
+        printf("%d: %d\n", affichage +1, taBourseFin[affichage]);
+    }
+    return 0; // Retourne 0 pour indiquer que le programme s'est terminé avec succès
 }
