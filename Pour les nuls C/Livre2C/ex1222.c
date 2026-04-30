@@ -6,18 +6,32 @@ int main()
     int x,y;
 
     /* Initialise la matrice */
-        for (x= 0; x<3; x++)
-            for (y=0; y<3; y++)
+        x = 0;
+        while(x<3)
+        {
+            y = 0;
+            while(y<3)
+            {
                 tictactoe[x][y] = '.';
+                y++;
+            }
+            x++;
+        }
         tictactoe[1][1] = 'X';
     
     /* Affiche le plateau */
         puts("Une partie de Tic-Tac-Toe ?");
-        for (x=0; x<3; x++)
+        x = 0;
+        while(x<3)
         {
-            for(y=0; y<3; y++)
+            y = 0;
+            while(y<3)
+            {
                 printf("%c\t", tictactoe[x][y]);
+                y++;
+            }
             putchar('\n');
+            x++;
         }
         return(0);
 }
