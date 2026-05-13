@@ -5,13 +5,11 @@ int main()
 {
     char motpasse[] = "taco"; // mot de passe à trouver
     char tabsaisie[15]; // tableau de caractères pour stocker la saisie de l'utilisateur
-    int match; // variable pour stocker le résultat de la comparaison entre la saisie et le mot de passe
 
     printf("Le mot de passe ?");
     scanf("%s", tabsaisie); // lit une chaîne de caractères depuis l'entrée standard et la stocke dans tabsaisie
 
-    match = strcmp(tabsaisie,motpasse); // compare la saisie de l'utilisateur avec le mot de passe et stocke le résultat dans match
-    if (match == 0) // si match est égal à 0, cela signifie que les deux chaînes de caractères sont identiques
+    if (strcmp(tabsaisie,motpasse) == 0) // si match est égal à 0, cela signifie que les deux chaînes de caractères sont identiques
         puts("Mot de passe correct");
     else
         puts("Mauvais mot de passe. Alertez la DGSE.");
