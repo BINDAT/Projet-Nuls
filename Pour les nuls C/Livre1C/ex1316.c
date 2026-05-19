@@ -2,10 +2,10 @@
 
 int main()
 {
-    char *president []= {"George Washington", "John Adams", "Thomas Jefferson", "James Monroe"};
+    char *president [][2]= {{"George", "Washington"}, {"John", "Adams"}, {"Thomas", "Jefferson"}, {"James", "Monroe"}};
     for (int défilement = 0; défilement < 4; défilement ++)
     {
-      printf("%s\n",president[défilement]);
+      printf("%-10s %s\n",president[défilement][0], president[défilement][1]);
     }
     return(0);
 }
