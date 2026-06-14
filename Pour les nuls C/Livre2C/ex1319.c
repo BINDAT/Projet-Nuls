@@ -1,13 +1,13 @@
 #include <stdio.h> // pour printf et getchar
 
-char getch(void)
+char getch(void) // fonction qui lit un caractère au clavier et le retourne
 {
-    char ch;
+    char ch; // variable locale pour stocker le caractère lu
 
-    ch = getchar();
-    while(getchar()!='\n')
-        ;
-    return(ch);
+    ch = getchar(); // on lit un caractère au clavier et on le stocke dans la variable ch
+    while(getchar()!='\n') // on vide le buffer d'entrée pour éviter les problèmes avec les caractères restants
+        ; // on ne fait rien, on attend juste que l'utilisateur appuie sur Entrée
+    return(ch); // on retourne le caractère lu
 }
 
 int main()
