@@ -10,13 +10,15 @@ int main()
         float heure_de_jeu;
     } bilou, marie, daniel, susie;
     
-    struct monEnreg humain;
-    strcpy(bilou.nom , "Bilou");
-    bilou.age = 49;
-    bilou.dette = 69.0f;
-    bilou.heure_de_jeu = 5.0f;
+    printf("Combien de temps de jeu a t'il ?\n");
+    struct monEnreg humain1;
+    strcpy(humain1.nom , "Bilou");
+    scanf("%f", &humain1.heure_de_jeu);
+    humain1.age = 49;
+    humain1.dette = 69.0f;
+    humain1.heure_de_jeu = humain1.heure_de_jeu;
 
-    printf("Victime : %s\n âge %i\n dette %1.f\n temps en heure %1.f\n", bilou.nom, bilou.age,bilou.dette,bilou.heure_de_jeu);
+    printf("Victime : %s\n âge %i\n dette %1.f\n temps en heure %1.f\n", humain1.nom, humain1.age,humain1.dette,humain1.heure_de_jeu);
 
     return(0);
 }
