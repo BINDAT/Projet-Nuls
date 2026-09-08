@@ -10,7 +10,7 @@ int main()
     struct scores joueurs[4]; // déclaration d'un tableau de structures
     int x; // variable de boucle
 
-    for (x= 0; x<4; x++)
+    for (x= 3; x>=0; x--)
     {
         printf("Indiquez le nom du joueur %d : ",x+1);
         scanf("%s", joueurs[x].nomj); // saisie du nom du joueur

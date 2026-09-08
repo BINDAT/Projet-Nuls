@@ -20,7 +20,7 @@ int main()
     
     puts("Infos de joueur");
     printf("#\tNom\tScore\n");
-    for (x=0;  x<4; x++)
+    for (x=0; x<4; x++)
     {
         printf("%d\t%s\t%5d\n",x+1, joueurs[x].nomj, joueurs[x].score);
     }
