@@ -6,3 +6,7 @@ int main (int argc, char *argv[])
         printf("Bienvenue, %s!\n",argv[1]);
     return(0);
 }
+
+/*
+Observation : ce code effectue un affichage sur le nom de l'utilisateur.
+*/
