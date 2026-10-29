@@ -11,5 +11,5 @@ int main()
     scanf("%d", &b);
     c = a/b;
     printf("%d/%d = %.2f\n", a, b, c);
-    return 0;
+    return(0);
 }
